@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400&family=Josefin+Slab:wght@700&display=swap");
+/*font-family: 'Fira Sans', sans-serif;
+  font-family: 'Josefin Slab', serif;*/
+
+body {
+  margin: 0 auto;
+  background-color: #a9cbd9;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  max-width: 1200px;
+}
+header {
+  background-color: #04bfbf;
+  height: 240px;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Slab", serif;
+  color: #01343a;
+}
+h1 {
+  font-size: 48px;
+  display: inline;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  margin: 20px 50px;
+  margin: 20px;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  box-shadow: 5px 5px 10px rgba(1, 52, 58, 0.3);
+}
+nav {
+  padding: 20px 0 0 0;
+  background-color: #037f8c;
+  height: 300px;
+  text-align: center;
+}
+nav a {
+  color: #a9cbd9;
+  font-size: 20px;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+main {
+  max-width: 1200px;
+}
+
+.card {
+  margin: 50px 0;
+  display: grid;
+  grid-column: 1;
+  border: 1px solid #037f8c;
+}
+
+.card h3 {
+  margin: -1px 0;
+  padding: 20px;
+  background-color: #037f8c;
+  color: #a9cbd9;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
