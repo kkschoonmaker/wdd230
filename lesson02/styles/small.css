@@ -1,0 +1,19 @@
+@media screen and (max-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  #contrast {
+    grid-column: 1/2;
+  }
+
+  #alignment {
+    grid-column: 1/2;
+  }
+
+  #whitespace {
+    grid-column: 1/2;
+  }
+}
