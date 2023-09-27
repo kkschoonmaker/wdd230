@@ -2,6 +2,13 @@
 /*font-family: 'Fira Sans', sans-serif;
   font-family: 'Josefin Slab', serif;*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
 body {
   margin: 0 auto;
   background-color: #ffffff;
@@ -36,7 +43,11 @@ header img {
   margin: 20px;
 }
 
-nav ul {
+#menu {
+  display: none;
+}
+
+.navigation {
   background-color: #026873;
   list-style: none;
   display: flex;
@@ -46,15 +57,21 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-  margin: 20px;
+.navigation li {
+  margin: 1.25rem;
+  display: block;
 }
 
-nav a {
+.navigation a {
   color: #ffffff;
   font-size: 20px;
-  /*display: block;*/
   text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+  color: #026873;
+  background-color: #ffffff;
 }
 
 main {
