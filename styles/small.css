@@ -63,4 +63,7 @@
     margin: 0 auto;
     display: block;
   }
+  .map {
+    grid-column: 1/2;
+  }
 }
