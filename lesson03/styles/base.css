@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   background-color: #f2f2f2;
   font-family: "Lato", sans-serif;
-  color: black;
+  color: #023373;
   text-align: left;
   max-width: 1200px;
 }
@@ -23,6 +23,7 @@ header {
   text-align: center;
   padding: 10px;
 }
+
 /*
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -50,28 +51,30 @@ h4 {
   font-family: "Unna", serif;
   line-height: 3rem;
 }
+
 h1 {
   font-size: 3rem;
-  color: #f2f2f2;
+  color: #f2cb05;
   padding: 0 10px 10px 10px;
-  /*text-shadow: 2px 2px 4px white;*/
+  letter-spacing: 1.5px;
 }
 
 h2 {
   font-size: 2rem;
-  color: #f2f2f2;
+  color: #f2cb05;
   padding: 10px;
+  letter-spacing: 1.5px;
 }
 
 h3 {
   margin: 20px 0;
   padding: 10px;
   font-size: 1.5rem;
-  color: #f2b705;
-  text-shadow: 0.75px 0.75px 2px black;
+  font-weight: 700;
+  color: #023373;
   text-decoration: underline;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 h4 {
@@ -90,7 +93,16 @@ ul {
 }
 
 .responsive {
+  margin: 20px 0;
   width: 100%;
   max-width: 1200px;
+  height: auto;
+}
+
+.responsive-small {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  max-width: 400px;
   height: auto;
 }
