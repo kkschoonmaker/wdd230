@@ -1,7 +1,6 @@
+@media screen and (min-width: 720px) {
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   text-align: center;
     padding: 20px;
 }
 
@@ -9,5 +8,24 @@ header {
     display: none;
   }
 
-
+  .navigation{
+  color:#ffffff;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+  .navigation li {
+    margin: 1.25rem;
+    display: block;
+  }
   
+  .navigation a {
+    background-color:#023373;
+    padding:10px;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+}
