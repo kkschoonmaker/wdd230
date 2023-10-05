@@ -126,7 +126,7 @@ background-color: #023373;
 }
 
 .hero-image .hero{
-  max-width:100%;
+  max-width:100vw;
   height:auto;
   object-fit: contain;
   object-position: center;
