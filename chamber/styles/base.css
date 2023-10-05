@@ -65,7 +65,7 @@ h4 {
 
 hr {
   margin: 40px;
-  border: 2px dotted #bf0b3b;
+  border: 2px dotted #aa0000;
 }
 
 
@@ -108,7 +108,7 @@ background-color: #023373;
   
   .navigation a:hover,
   .navigation a:active {
-    color: #bf0b3b;
+    color: #aa0000;
     background-color: #ffffff;
   }
 
@@ -139,8 +139,9 @@ background-color: #023373;
   left: 100px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #bf0b3b;
+  background-color: #aa0000;
   color: white;
+  font-weight: 700;
   font-size: 16px;
   padding: 15px 25px;
   border: none;
@@ -150,8 +151,9 @@ background-color: #023373;
 }
 
 .hero-image .button:hover{
-  color:#bf0b3b;
+  color:#aa0000;
   background-color: #ffffff;
+  outline: 2px solid #aa0000;
 }
 
 footer{
