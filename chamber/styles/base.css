@@ -19,9 +19,18 @@ body {
 }
 
 header {
+  position: relative;
   background-color: rgba(2, 51, 115, 1);
   text-align: center;
   padding: 10px;
+}
+
+#mode{
+ position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
 }
 
 h1,
@@ -81,6 +90,7 @@ hr {
 
 #menu::before {
   content: "≡";
+  font-size: 3rem;
 }
 
 .navigation {
