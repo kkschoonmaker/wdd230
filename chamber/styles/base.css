@@ -6,13 +6,16 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1.75rem;
+  
 }
+
 
 body {
   height: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
   font-family: "Lato", sans-serif;
+  font-size: 1.25em;
   color: #023373;
   text-align: left;
   max-width: 1200px;
@@ -25,13 +28,16 @@ header {
   padding: 10px;
 }
 
+/* Dark Mode */
 #mode{
+   color: #bfd1e9;
  position: absolute;
 	top: 1rem;
 	right: 1rem;
-	font-size: 3rem;
+	font-size: 1rem;
 	cursor: pointer;
 }
+
 
 h1,
 h2,
@@ -39,10 +45,11 @@ h3,
 h4 {
   font-family: "Unna", serif;
   line-height: 3rem;
-  text-align: center;
+ 
 }
 
 h1 {
+   text-align: center;
   font-size: 3rem;
   color: #f2cb05;
   padding: 0 10px 10px 10px;
@@ -50,21 +57,21 @@ h1 {
 }
 
 h2 {
+  margin:0;
   font-size: 2rem;
   color: #023373;
-  padding: 10px;
+  padding: 5px;
   letter-spacing: 1.5px;
+
 }
 
 h3 {
-  margin: 20px 0;
-  padding: 10px;
-  font-size: 1.5rem;
-  font-weight: 700;
+   font-size: 1rem;
+  font-weight: bolder;
   color: #023373;
-  text-decoration: underline;
-  text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: 1.5rem;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -72,10 +79,7 @@ h4 {
   margin: 20px 0;
 }
 
-hr {
-  margin: 40px;
-  border: 2px dotted #aa0000;
-}
+
 
 
 #menu {
@@ -166,7 +170,28 @@ background-color: #023373;
   outline: 2px solid #aa0000;
 }
 
+.card {
+  margin:2em;
+  padding:1em;
+  background-color: #bfd1e9;
+  border: 1px solid #023373;
+}
+
+.card h2, .card h3, .card p {
+  text-align: left;
+}
+
+hr {
+  margin:0 0 .5em 0;
+   border: 1px dotted #aa0000;
+}
+.spotlight{
+  display: block;
+}
+
+
 footer{
+  font-size: .8em;
   padding:10px;
   background-color: #023373;
   color:#ffffff;

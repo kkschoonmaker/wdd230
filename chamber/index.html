@@ -22,8 +22,12 @@
   </head>
   <body>
     <header>
-      <h1>Colorado Springs Chamber of Commerce</h1>
-      <div id="mode">🕶️</div>
+     <h1>Colorado Springs Chamber of Commerce</h1>
+
+      <!-- Dark Mode -->
+     <div id="mode"> <p>Dark Mode</p></div>
+
+    
     </header>
         <a id="menu" href="#"></a>
      <nav>
@@ -41,29 +45,50 @@
       <button class="button"> Join the Chamber </button>   
     </div>
       <!--Current Events-->
-      <section>
-        <h2>Current Events Place Holder</h2>
+      <section class='card'>
+        <h2>Events</h2>
+      <hr>
+      <h3>Annual Chamber Gala</h3>
+      <p>Join us for our Annual Commerce Gala, at the Antlers Hotel on December 9th 2023</p>
+
       </section>
              <!--Weather Card-->
-      <section>
-        <h2>Weather Card Place Holder</h2>
+      <section class='card'>
+        <h2>Weather</h2>
+        <hr>
+        <p>Current weather placeholder</p>
       </section>
         <!--Business Spotlight-->
-      <section>
-        <h2>Business Spolight Place Holder</h2>
+      <section class='spotlight'>
+        <h2>Business Spotlight</h2>
+        <div id='bus1' class='card'>
+          <h3>Modern Technology Solutions, Inc. (MTSI)</h3>
+          <hr>
+          <p>985 Space Center Dr, Ste 155 Colorado Springs, CO 80915</p>
+        </div>
+        <div id='bus2' class='card'>
+          <h3>Summit Interquest</h3>
+          <hr>
+          <p>5984 Interquest Dr Colorado Springs, CO<br>719.278.3861</p>
+        </div>
+        <div id='bus3' class='card'>
+          <h3>The French Kitchen</h3>
+          <hr>
+          <p>719.528.6295</p>
+        </div>
       </section>
      
 
     </main>
     <footer>
       <p id="year"></p>
-      <p>Colorado Springs Chamber of Commerce | Project for WDD 230 BYU-I</p>
-        <p>contact information</p>
+      <p>Colorado Springs Chamber of Commerce</p>
+        <p>719.123.4567</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hambutton.js"></script>
-    <script src='darkmode.js'></script>
+    <script src='scripts/darkmode.js'></script>
   </body>
  
   </html>
