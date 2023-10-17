@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.75rem;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+  max-width: 1500px;
+}
+
+img{
+    width:100%;
+    height:auto;
+    
+}
