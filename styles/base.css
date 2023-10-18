@@ -74,18 +74,20 @@ header img {
   background-color: #ffffff;
 }
 
-main {
-  max-width: 1200px;
- 
-}
 .temple-img{
-  position:relative
+  position:relative;
+  max-width:960px;
 }
 
-.temple-img h2{
+
+.temple-text{
+  font-family: "Josefin Slab", serif;
+  color: #02454d;
+  font-size: 30px;
+  margin: 0;
   position:absolute;
-  top:0;
-  left:60%;
+  top:15%;
+  left:50%;
   white-space: nowrap;
 }
 

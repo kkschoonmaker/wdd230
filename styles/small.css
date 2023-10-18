@@ -59,6 +59,10 @@
     content: "↑";
   }
 
+.temple-img{
+  margin-top: 20px;
+}
+
   .main-grid {
     margin: 0 auto;
     display: block;
