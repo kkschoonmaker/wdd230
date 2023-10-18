@@ -59,11 +59,13 @@
     content: "↑";
   }
 
-  main {
+  .main-grid {
     margin: 0 auto;
     display: block;
   }
   .map {
+    width:1vw;
     grid-column: 1/2;
+    margin: 10px;
   }
 }
