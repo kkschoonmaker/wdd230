@@ -19,7 +19,7 @@
 
   #menu {
     display: block;
-    font-size: 1.25rem;
+    font-size: 2rem;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
     background-color: #026873;
@@ -59,17 +59,35 @@
     content: "↑";
   }
 
-.temple-img{
+.hero{
   margin-top: 20px;
 }
 
-  .main-grid {
-    margin: 0 auto;
-    display: block;
+.herolabel{
+  top:1rem;
+  right:1rem;
+}
+
+.herolabel p{
+  font-size: 1em;
+  padding:.75rem;
+}
+  .main-grid{
+   margin:0 auto;
+   text-align: center;
+   display:block;
   }
+/* 
+#learningactivities{
+  grid-column: 1/2;
+}
+
+#information{
+  grid-column: 1/2;
+} */
+
   .map {
-    width:1vw;
-    grid-column: 1/2;
-    margin: 10px;
+  display: block;
+  margin:2rem;
   }
 }
