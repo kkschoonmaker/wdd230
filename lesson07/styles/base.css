@@ -1,0 +1,45 @@
+
+
+body{
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+h1{
+    padding:20px;
+    background-color:rgb(214, 128, 24)
+}
+
+
+.fade-in-image {
+   background-color: black;
+   
+}
+
+.fade-in-image img{
+    display:block;
+    max-width:100%;
+    height:auto;
+    margin:0 auto;
+    margin-top:5vh;
+    margin-bottom: 5vh;;
+    animation: fadeIn 7s; 
+    
+    
+}
+
+footer{
+    padding:20px;
+    background-color: rgb(214, 128, 24);
+}
+
+@keyframes fadeIn{
+ from{
+    opacity:0;
+}
+to{
+    opacity:1;
+}
+}
