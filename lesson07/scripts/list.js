@@ -21,8 +21,8 @@ button.addEventListener('click', () => {
 
 function displayList(item) {
   /*original code to display favorite chapters*/
-  const li = document.createElement('li');
-  const deleteButton = document.createElement('button');
+  let li = document.createElement('li');
+  let deleteButton = document.createElement('button');
   li.textContent = /*input.value*/ item;
   deleteButton.textContent = '❌';
   deleteButton.classList.add('delete');
@@ -30,22 +30,21 @@ function displayList(item) {
   list.append(li);
   deleteButton.addEventListener('click', () => {
     list.removeChild(li);
+    deleteChapter(li.textContent);
     input.focus();
   });
-  input.value = '';
 }
 
 /*local storage*/
 
 function setChapterList() {
-  localStorage.setItem(myFavBOMList, JSON.stringify(chaptersArray));
+  localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
 }
 function getChapterList() {
   return JSON.parse(localStorage.getItem('myFavBOMList'));
 }
 function deleteChapter(chapter) {
   chapter = chapter.slice(0, chapter.length - 1);
-  s;
   chaptersArray = chaptersArray.filter((item) => item !== chapter);
   setChapterList();
 }
