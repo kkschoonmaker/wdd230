@@ -72,7 +72,7 @@ main .discovery-grid{
   grid-template-columns: 20vw auto;
   grid-template-rows: repeat(15, 15rem) ;
   grid-gap:.25em;
-  justify-items:flex-end;
+  justify-items:center;
   align-items:center;
   text-align: center;
   line-height: 0;

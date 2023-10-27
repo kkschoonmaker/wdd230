@@ -193,10 +193,18 @@ footer{
 
 /* Discover Page */
 main .discovery-grid{
+  /* display:grid;
+  grid-template-columns: auto; */
   display:block;
+  align-items:center;
   text-align: center;
+  /* padding-top:5rem;
+  padding-left: 3rem; */
   background-color: #bfd1e9;
 }
+
+
+  
 
 .sidebar{
   width:20vw;
@@ -205,9 +213,8 @@ main .discovery-grid{
   background-color: #dfdfdf;
   border-radius: 8px;
 }
-
-.gallery{
-  margin:0 auto;
+#popchart{
+  margin: 0 auto;
 }
 
 
