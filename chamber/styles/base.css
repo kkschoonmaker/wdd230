@@ -185,8 +185,40 @@ hr {
 
 footer{
   font-size: .8em;
-  padding:10px;
+  padding:2rem;
   background-color: #023373;
   color:#ffffff;
   text-align: center;
+}
+
+/* Discover Page */
+main .discovery-grid{
+  display:block;
+  text-align: center;
+  background-color: #bfd1e9;
+}
+
+.sidebar{
+  width:20vw;
+  padding:3rem;
+  border:#aa0000 ridge 5px;
+  background-color: #dfdfdf;
+  border-radius: 8px;
+}
+
+.gallery{
+  margin:0 auto;
+}
+
+
+.gallery img{
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px #023373;
+}
+
+figcaption{
+  margin:.5rem 0 0 1rem;
+  text-align: center;
+  font-size: .75rem;
+  line-height: 1rem;
 }
