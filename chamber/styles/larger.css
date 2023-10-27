@@ -78,11 +78,8 @@ main .discovery-grid{
   line-height: 0;
   padding-top:5rem;
   padding-left: 3rem;
-  
-
-
-
 }
+
 #sidebar-1{
   grid-column: 1/2;
   grid-row: 1/3;
@@ -109,6 +106,12 @@ main .discovery-grid{
   grid-row: 10/13;
    align-self: end;
 }
+
+#sidebar-6{
+  grid-column: 1/2;
+  grid-row: 13/16;
+ 
+} 
 
 #gallery-1{
   grid-column:2/3;
@@ -140,4 +143,8 @@ main .discovery-grid{
 #gallery-6{
   grid-column:2/3;
    grid-row:14/17;
+}
+
+.gallery img:hover{
+transform:scale(1.5);
 }
