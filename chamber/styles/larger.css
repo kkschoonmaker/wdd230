@@ -73,12 +73,11 @@ main .discovery-grid{
   justify-items:center;
   align-items:center;
   text-align: center;
-  /* line-height: 0; */
   padding-left: 3rem;
 }
 
 .sidebar{
-  
+  margin:0 auto;
  width:20vw; 
 }
 
@@ -90,28 +89,30 @@ main .discovery-grid{
 
 #sidebar-2{
   grid-column: 1/2;
-  grid-row: 3/5;
-  
+  grid-row: 3/4;
+  align-self: start;
 } 
 #sidebar-3{
   grid-column: 1/2;
-  grid-row: 5/8;
+  grid-row: 4/7;
+ 
  
 } 
 #sidebar-4{
   grid-column: 1/2;
-  grid-row: 8/10;
+  grid-row: 7/10;
+  align-self: start;
  
 } 
 #sidebar-5{
   grid-column: 1/2;
-  grid-row: 10/13;
-   align-self: end;
+  grid-row: 10/12;
+  align-self: start;
 }
 
 #sidebar-6{
   grid-column: 1/2;
-  grid-row: 13/16;
+  grid-row: 12/16;
  
 } 
 
