@@ -73,7 +73,7 @@ main .discovery-grid{
   justify-items:center;
   align-items:center;
   text-align: center;
-  line-height: 0;
+  /* line-height: 0; */
   padding-left: 3rem;
 }
 
