@@ -5,8 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.75rem;
-  
+    
 }
 
 
@@ -16,16 +15,18 @@ body {
   background-color: #f2f2f2;
   font-family: "Lato", sans-serif;
   font-size: 1.25em;
+  line-height: 1.75em;
   color: #023373;
   text-align: left;
   max-width: 1200px;
+  
 }
 
 header {
   position: relative;
   background-color: rgba(2, 51, 115, 1);
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
 }
 
 /* Dark Mode */
@@ -44,13 +45,13 @@ h3,
 h4 {
    text-align: center;
   font-family: "Unna", serif;
-  line-height: 3rem;
+  line-height: 3em;
  
 }
 
 h1 {
    text-align: center;
-  font-size: 3rem;
+  font-size: 3em;
   color: #f2cb05;
   padding: 0 10px 10px 10px;
   letter-spacing: 1.5px;
@@ -58,7 +59,7 @@ h1 {
 
 h2 {
   margin:0;
-  font-size: 2rem;
+  font-size: 2em;
   color: #023373;
   padding: 5px;
   letter-spacing: 1.5px;
@@ -66,7 +67,7 @@ h2 {
 }
 
 h3 {
-   font-size: 1rem;
+   font-size: 1em;
   font-weight: bolder;
   color: #023373;
   letter-spacing: 1px;
@@ -77,7 +78,7 @@ h3 {
 
 #menu {
   display: block;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   background-color: #023373;
@@ -201,19 +202,27 @@ main .discovery-grid{
   background-color: #bfd1e9;
 }
 
-
+.sidebar h2{
+  max-width:100%;
+}
   
 
 .sidebar{
   margin:5rem auto;
-  width:20vw;
-  padding:3rem;
+  padding:1.5rem;
   border:#aa0000 ridge 5px;
   background-color: #dfdfdf;
   border-radius: 8px;
 }
+
+#sidebar-1{
+  margin-top:0;
+}
+
 #popchart{
   margin: 0 auto;
+  max-height:100%;
+  max-width:100%
 }
 
 
@@ -223,9 +232,12 @@ main .discovery-grid{
   box-shadow: 4px 4px 12px #023373;
 }
 
+#gallery-6{
+  margin-bottom:2rem;
+}
 figcaption{
   margin:.5rem 0 0 1rem;
   text-align: center;
-  font-size: .75rem;
-  line-height: 1rem;
+  font-size: .9rem;
+  line-height: 1.2rem;
 }

@@ -1,8 +1,5 @@
 @media screen and (min-width: 800px) {
-header {
-   text-align: center;
-    padding: 20px;
-}
+
 
 #menu {
     display: none;
@@ -15,6 +12,7 @@ header {
   justify-content: space-around;
   align-items: center;
   }
+
   .navigation li {
     margin: 1.25rem;
     display: block;
@@ -50,6 +48,7 @@ header {
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
+
 .spotlight h2{
     text-align: center;
   grid-column: 1/4;
@@ -64,7 +63,6 @@ header {
 #bus3{
   grid-column: 3/4;}
 
-}
 
 /* Discover Page */
 main .discovery-grid{
@@ -76,8 +74,12 @@ main .discovery-grid{
   align-items:center;
   text-align: center;
   line-height: 0;
-  padding-top:5rem;
   padding-left: 3rem;
+}
+
+.sidebar{
+  
+ width:20vw; 
 }
 
 #sidebar-1{
@@ -147,4 +149,6 @@ main .discovery-grid{
 
 .gallery img:hover{
 transform:scale(1.5);
+}
+
 }
