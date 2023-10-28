@@ -1,6 +1,11 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width:700px) {
 
-.card{
+body{
+  max-width:600px;
+}
+
+
+  .card{
      margin:1.5em;
      padding:1em;
   }

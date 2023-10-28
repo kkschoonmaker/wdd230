@@ -1,6 +1,8 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
 
-
+body{
+  max-width:1200px;
+}
 #menu {
     display: none;
   }
