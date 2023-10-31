@@ -54,6 +54,6 @@ caption {
 	font-size: .85rem;
 }
 
-tbody tr:nth-child(odd){
+tbody tr:nth-child(even){
     background-color:hsl(0, 0%, 93%, 1)
 }
