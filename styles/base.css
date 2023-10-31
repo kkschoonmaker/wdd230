@@ -5,8 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  line-height: 1.75rem;
+  box-sizing: border-box;  
 }
 
 body {
@@ -16,6 +15,7 @@ body {
   color: #02454d;
   text-align: center;
   max-width: 960px;
+  line-height: 1.75rem;
 }
 
 header {
