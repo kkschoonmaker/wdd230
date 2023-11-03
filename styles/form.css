@@ -50,7 +50,7 @@ input::placeholder {
 }
 
 #formmessage {
-	visibility: none;
+	display: none;
 	margin: 10px;
 	padding: 0.5rem;
 	color: red;
