@@ -61,7 +61,11 @@
             <label class="bottom"><input type="radio" name="membership" value="Gold"> Gold Membership</label>
         </fieldset>
 
-        <label class="description"><input type="text" name="description">Please give a description of your business/organization.</label>
+        <label class="description"> Please give a description of your business/organization.
+          <textarea id="description-text" name="description" wrap="hard"></textarea>
+        </label>
+
+        <timestamp id="time-stamp" type="hidden" name="timestamp" ></timestamp>
 
         <button class="submitBtn" type="submit">Join the Chamber of Commerce</button>
      </form>

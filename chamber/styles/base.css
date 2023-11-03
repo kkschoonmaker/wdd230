@@ -272,12 +272,22 @@ form > label{
   height: 10rem;
 }
 
-.description {
+.description label{
+display:block;
+}
 
+.description #description-text{
+  display:block;
+  width:100%;
+  height:10rem;
+  margin-top:.5rem;
 }
 
 .submitBtn{
-  margin: 4rem auto;
+  display:block;
+  position:relative;
+  margin:7rem auto;
+
   padding: 15px 25px;
   background-color: #aa0000;
   color: white;
