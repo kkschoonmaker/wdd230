@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Unna:wght@400;700&display=swap");
 /*Headings will be Unna 400 or 700*/
 /*body text will be Lato 300, 400, or 700*/
+:root{
+  --background-color:#f2f2f2;
+  --main-text-color:#023373;
+  --accent-color:#f2cb05;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -240,4 +247,48 @@ figcaption{
   text-align: center;
   font-size: .9rem;
   line-height: 1.2rem;
+}
+
+/* Join Page */
+fieldset{
+  margin: 2rem auto;
+}
+
+form label input{
+   margin-bottom: 1rem;
+}
+
+.top input{
+ display:block;
+}
+
+.bottom {
+  display:block;
+}
+
+form > label{
+  display:block;
+   width: 100%;
+  height: 10rem;
+}
+
+.description {
+
+}
+
+.submitBtn{
+  margin: 4rem auto;
+  padding: 15px 25px;
+  background-color: #aa0000;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.submitBtn:hover{
+  color:#aa0000;
+  background-color: #ffffff;
+  outline: 2px solid #aa0000;
 }

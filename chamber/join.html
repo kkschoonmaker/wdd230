@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber of Commerce - Colorado Springs</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="author" content="Kelly Schoonmaker">
+    <meta
+      name="description"
+      content="Join the Chamber of Commerce for Colorado Springs">
+    <meta
+      property="og:title"
+      content="Join the Chamber of Commerce - Colorado Springs,">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kkschoonmaker.github.io/wdd230/images/heroimage.webp">
+    <meta property="og:url" content="https://kkschoonmaker.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+  </head>
+  <body>
+    <header>
+     <h1>Colorado Springs Chamber of Commerce</h1>
+
+      <!-- Dark Mode -->
+     <div id="mode"> <p>Dark Mode</p></div>   
+    </header>
+
+        <a id="menu" href="#"></a>
+     <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+     </nav>
+    
+    <main>
+     <h2>Join the Chamber of Commerce <br> Colorado Springs</h2>
+      
+
+     <form method="get"action="thankyou.html">
+        <fieldset>
+            <legend><h3>Applicant Information</h3></legend>
+            <label class="top" id="fname">First Name*<input type="text" name="fname" required></label>
+            <label class="top" id="lname">Last Name*<input type="text" name="lname" required></label>
+            <label class="top" id="title">Title/Position in Organization ADD REGULAR EXPRESSION JS<input type="text" name="title"></label>
+            <label class="top" id="email">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+             <label class="top" id="phone">Phone*<input type="tel" name="phone" required placeholder="1235551234"></label>
+             <label class="top" id="orgname">Name of business/organization<input type="text" name="orgname" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Membership Options</h3></legend>
+            <label class="bottom"><input type="radio" name="membership" value="NP"> Nonprofit Membership</label>
+            <label class="bottom"><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+            <label class="bottom"><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+            <label class="bottom"><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+        </fieldset>
+
+        <label class="description"><input type="text" name="description">Please give a description of your business/organization.</label>
+
+        <button class="submitBtn" type="submit">Join the Chamber of Commerce</button>
+     </form>
+     
+     <div class="benfits">
+
+     </div>
+
+    </main>
+    <footer>
+      <p id="year"></p>
+      <p>Colorado Springs Chamber of Commerce</p>
+        <p>719.123.4567</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hambutton.js"></script>
+    <script src='scripts/darkmode.js'></script>
+    <script src='scripts/windchill.js'></script>
+  </body>
+ 
+  </html>
