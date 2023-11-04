@@ -41,13 +41,13 @@
     <main>
      <h2>Join the Chamber of Commerce <br> Colorado Springs</h2>
       
-
+<div class="form-grid">
      <form method="get"action="thankyou.html">
         <fieldset>
             <legend><h3>Applicant Information</h3></legend>
             <label class="top" id="fname">First Name*<input type="text" name="fname" required></label>
             <label class="top" id="lname">Last Name*<input type="text" name="lname" required></label>
-            <label class="top" id="title">Title/Position in Organization ADD REGULAR EXPRESSION JS<input type="text" name="title"></label>
+            <label class="top" id="title">Title/Position in Organization<input type="text" name="title" pattern="[a-zA-Z/s-].{7,}" title="Must be at least 7 characters in length, and include only letters, spaces, or hyphens."></label>
             <label class="top" id="email">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
              <label class="top" id="phone">Phone*<input type="tel" name="phone" required placeholder="1235551234"></label>
              <label class="top" id="orgname">Name of business/organization<input type="text" name="orgname" required></label>
@@ -70,9 +70,60 @@
         <button class="submitBtn" type="submit">Join the Chamber of Commerce</button>
      </form>
      
-     <div class="benfits">
+     <div class="benefits">
+      <div class="benefits-card" id="level-np">
+        <h3>NonProfit Membership</h3>
+        <p class="price-banner">0$ for Non-profit organizations</p>
+          <ul> 
+            <li>Official Chamber Member window cling decal for your office window</li>
+            <li>Basic business listing on the Chamber site</li>
+            <li>Full access to our mailing list</li>
+            <li>Invitation to all Chamber events</li>
+            <li>Exclusive Chamber member only newsletter</li>
+            <li>Be eligible for grants and & funding</li>
+          </ul>
+      </div>
+
+      <div class="benefits-card" id="level-bronze">
+        <h3>Bronze Membership</h3>
+        <p class="price-banner">$200/yr.</p>
+          <ul> 
+            <li>All benefits of the Non-Profit PLUS</li>
+            <li>On the customer referrals list</li>
+            <li>Discounted tickets to all Chamber events</li>
+            <li>Have a established business assigned as a mentor</li>
+            <li>Welcome spotilght post on all Chamber social media accounts</li>
+          </ul>
+      </div>
+
+      <div class="benefits-card" id="level-silver">
+        <h3>Silver Membership</h3>
+        <p class="price-banner">$400/yr.</p>
+          <ul> 
+            <li>All benefits of the Bronze and Non-Profit PLUS</li>
+            <li>Made aware of, and consulted on legislative issues regarding your business</li>
+            <li>Regularly featured on the "spotlight companies" on the Chamber homepage</li>
+            <li>Added to the official referral list given out by the Chamber</li>
+            <li>Enhanced business listing on the Chamber site</li>
+            <li>Free access to Chamber boardroom 2 times per year</li>
+
+          </ul>
+      </div>
+
+      <div class="benefits-card" id="level-gold">
+        <h3>Gold Membership</h3>
+        <p class="price-banner">$600/yr.</p>
+          <ul> 
+            <li>All benefits of the Silver, Bronze, and Non-profit PLUS</li>
+            <li>Prominent adverstising spot at a major Chamber event</li>
+            <li>Large scale platinum listing on the Chamber website</li>
+            <li>Free access to Chamber boardroom 4 times per year</li>
+
+          </ul>
+      </div>
 
      </div>
+</div>
 
     </main>
     <footer>

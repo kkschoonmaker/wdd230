@@ -154,4 +154,13 @@ main .discovery-grid{
 transform:scale(1.5);
 }
 
+/* Join Page */
+
+.form-grid{
+  display:grid;
+  grid-template-columns: 40% 60%;
+  gap: 2rem;
+}
+
+
 }
