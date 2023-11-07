@@ -1,0 +1,28 @@
+{
+  "famName": "Smith",
+  "dateMoved": "2023-10-10",
+  "numFamMembers": 4,
+  "visitBish": true,
+  "famMembers": [
+    {
+      "name": "John Smith",
+      "gender": "male",
+      "bdate": "1978-01-02"
+    },
+    {
+      "name": "Jane Smith",
+      "gender": "female",
+      "bdate": "1979-11-21"
+    },
+    {
+      "name": "Becky Smith",
+      "gender": "female",
+      "bdate": "2005-10-03"
+    },
+    {
+      "name": "Clair Smith",
+      "gender": "female",
+      "bdate": "2009-01-15"
+    }
+  ]
+}
