@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(233, 233, 233) ;
+    font-size: 16px;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 5px;
+    border:10px solid rgb(233, 233, 233);
+    box-shadow:-.5rem -.5rem .75rem rgba(10, 10, 51, .3);
+}
+
+
+#cards section{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:1rem;
+    background-color:#c6c6eb ;
+    text-align: center;
+    border: 1px solid black;
+}
+
+h1, h2{
+    margin:.5rem auto;
+    text-align: center;
+    color:#2d2daf;    
+}
+
+p{
+    font-family: sans-serif;
+    line-height: .5rem;
+}
+
+img{
+    width:auto;
+    max-width: 325px;
+    height:350px;
+    box-shadow:.5rem .5rem .75rem rgba(10, 10, 51, .3);
+}
