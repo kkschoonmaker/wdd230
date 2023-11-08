@@ -1,0 +1,207 @@
+{
+  "lessons": [
+    {
+      "lesson": "01",
+      "links": [
+        {
+          "url": "lesson01/holygrail.html",
+          "title": "Holy Layout"
+        },
+        {
+          "url": "https://codepen.io/kkschoonie/pen/JjwJdvz",
+          "title": "JS Pen"
+        }
+      ]
+    },
+      {
+      "lesson": "02",
+      "links": [
+        {
+          "url": "lesson01/media-query.html",
+          "title": "Media Query"
+        },
+        {
+          "url": "lesson02/design-principles.html",
+          "title": "Design Principles Document"
+        }
+      ]
+    },
+       {
+      "lesson": "03",
+      "links": [
+        {
+          "url": "lesson03/images/screenshot.jpg",
+          "title": "Combinators"
+        },
+        {
+          "url": "https://codepen.io/kkschoonie/pen/Yzdadam",
+          "title": "Psuedo-Elements"
+        }
+        {
+          "url": "https://codepen.io/kkschoonie/pen/BavrvXW?editors=1000",
+          "title": "Responsive Menu"
+        }
+      ]
+    },
+      {
+      "lesson": "04",
+      "links": [
+        {
+          "url": "https://codepen.io/kkschoonie/pen/GRPXOBm?editors=1100",
+          "title": "Psuedo-Classes"
+        }        
+      ]
+    },
+       {
+      "lesson": "05",
+      "links": [
+        {
+          "url": "lesson05/bom.html",
+          "title": "BOM Top 10"
+        }        
+      ]
+    },
+      {
+      "lesson": "06",
+      "links": [
+        {
+          "url": "lesson06/images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "lesson06/responsive-images.html",
+          "title": "Responsive Images"
+        }
+      ]
+    },
+       {
+      "lesson": "07",
+      "links": [
+        {
+          "url": "lesson07/lazyload.html",
+          "title": "Lazy Loading"
+        },
+        {
+          "url": "lesson07/bom.html",
+          "title": "BOM Local Storage"
+        }
+      ]
+    },
+       {
+      "lesson": "08",
+      "links": [
+        {
+          "url": "lesson08/tablebuild.html",
+          "title": "Table Build"
+        },
+        {
+          "url": "lesson08/form-start/index.html",
+          "title": "Application Form"
+        }
+        {
+          "url": "form.html",
+          "title": "Form Build"
+        }
+      ]
+    },
+      {
+      "lesson": "09",
+      "links": [
+        {
+          "url": "lesson09/new-ward-members.json",
+          "title": "JSON"
+        },
+        {
+          "url": "lesson09/prophets.html",
+          "title": "Prophets"
+        }
+      ]
+    },
+       {
+      "lesson": "10",
+      "links": [
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        }
+      ]
+    },
+       {
+      "lesson": "11",
+      "links": [
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        }
+      ]
+    },
+       {
+      "lesson": "12",
+      "links": [
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        }
+      ]
+    },
+       {
+      "lesson": "13",
+      "links": [
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        }
+      ]
+    },
+       {
+      "lesson": "14",
+      "links": [
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        },
+        {
+          "url": "link",
+          "title": "Title"
+        }
+      ]
+    }
+    
+  ]
+}
