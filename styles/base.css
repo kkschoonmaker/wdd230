@@ -38,6 +38,10 @@ h1 {
   margin: 0;
 }
 
+h4{
+  text-align: left;
+}
+
 header img {
   box-shadow: 5px 5px 10px rgba(1, 52, 58, 0.3);
   margin: 20px;
@@ -120,6 +124,15 @@ h2 {
   text-align: center;
 }
 
+#activity-links ul{
+  padding:.25rem;
+
+}
+
+#activity-links a{
+  text-decoration: none;
+}
+
 #learningactivities{
   grid-column: 1/2;
 }
@@ -148,15 +161,15 @@ h2 {
 }
 
 .card ul {
-  list-style: numeric;
+  list-style: none;
   text-align: left;
   margin: 10px 10px 10px 30px;
 }
 
-::marker {
+/* ::marker {
   color: #02454d;
   font-size: 1.5rem;
-}
+} */
 
 .map {
   margin:10px;
