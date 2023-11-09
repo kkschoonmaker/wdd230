@@ -91,16 +91,16 @@
       "lesson" : "08",
       "links" : [
         {
-          "url" : "lesson08/tablebuild.html",
-          "title" : "Table Build"
+          "url": "lesson08/tablebuild.html",
+          "title": "Table Build"
         },
         {
-          "url" : "lesson08/form-start/index.html",
-          "title" : "Application Form"
-        }
+          "url": "lesson08/form-start/index.html",
+          "title": "Application Form"
+        },
         {
-          "url" : "form.html",
-          "title" : "Form Build"
+          "url": "form.html",
+          "title": "Form Build"
         }
       ]
     },
