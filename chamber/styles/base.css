@@ -386,11 +386,13 @@ main{
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
   max-width: 170px;
-}
+  margin-bottom: 1rem;
+ }
 
-.dir-grid section > * {
-	margin: 0.1rem;
-}
+ .dir-grid h3{
+  margin: .5rem;
+ }
+
 
 
 .dir-list {
