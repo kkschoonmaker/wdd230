@@ -10,8 +10,10 @@ body{
      padding:1em;
   }
 
-
-
+/* Directory Page */
+.dir-grid section {
+height:330px;
+}
 
 
 }
