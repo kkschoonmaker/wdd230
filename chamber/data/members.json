@@ -1,0 +1,72 @@
+{
+  "companies": [
+    {
+      "name": "Amnet",
+      "address": "219 W Colorado Ave Suite 200",
+      "phone": "(719) 442-6683",
+      "url": "https://www.amnet.net/",
+      "img": "images/directory/amsnet-orb.webp",
+      "memlevel": "Silver",
+      "misc": ""
+    },
+
+    {
+      "name": "Bryan Construction",
+      "address": "5475 Tech Center Drive, Suite 300",
+      "phone": "(719) 632-5355",
+      "url": "https://bryanconstruction.com/",
+      "img": "images/directory/bryan-construction-logo.webp",
+      "memlevel": "Bronze",
+      "misc": ""
+    },
+
+    {
+      "name": "Lewis Roca",
+      "address": "(719) 386-3000",
+      "url": "https://www.lewisroca.com/",
+      "img": "images/directory/lewis-roca-logo.webp",
+      "memlevel": "Gold",
+      "misc": ""
+    },
+
+    {
+      "name": "Furry Land of Colorado Springs",
+      "address": "2856 Janitell Rd, Suite C",
+      "phone": "(719) 785-0554",
+      "url": "https://furryland.us/colorado-springs/",
+      "img": "images/directory/furry-land-logo.png",
+      "memlevel": "Bronze",
+      "misc": ""
+    },
+
+    {
+      "name": "Pikes Peak Community Foundation",
+      "address": "315 E Pikes Peak Ave, #120",
+      "phone": "(719) 389-1251",
+      "url": "https://www.ppcf.org/",
+      "img": "images/directory/ppcf-logo.webp",
+      "memlevel": "Non-profit",
+      "misc": ""
+    },
+
+    {
+      "name": "Switchbacks FC",
+      "address": "111 W Cimarron St",
+      "phone": "(719) 368-8480",
+      "url": "https://www.switchbacksfc.com/",
+      "img": "images/directoy/switchbacks-logo.webp",
+      "memlevel": "Gold",
+      "misc": ""
+    },
+
+    {
+      "name": "The United Staes Olympic & Paralympic Committee",
+      "address": "27 Tejon St",
+      "phone": "(719) 632-5551",
+      "url": "https://www.teamusa.com/",
+      "img": "images/directory/us-olympic-committee-logo.webp",
+      "memlevel": "Gold",
+      "misc": ""
+    }
+  ]
+}
