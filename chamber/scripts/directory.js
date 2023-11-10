@@ -23,8 +23,8 @@ const displayMembers = (members) => {
     logo.setAttribute('src', member.img);
     logo.setAttribute('alt', `Logo of ${member.name}`);
     logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('width', '340');
-    logo.setAttribute('height', '440');
+    logo.setAttribute('width', '80');
+    logo.setAttribute('height', 'auto');
     address.textContent = `${member.address}`;
     phone.textContent = `${member.phone}`;
     url.href = `${member.url}`;
