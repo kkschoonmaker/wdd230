@@ -23,8 +23,8 @@ const displayMembers = (members) => {
     logo.setAttribute('src', member.img);
     logo.setAttribute('alt', `Logo of ${member.name}`);
     logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('width', '80');
-    logo.setAttribute('height', 'auto');
+    logo.setAttribute('width', 'auto');
+    logo.setAttribute('height', '40');
     address.textContent = `${member.address}`;
     phone.textContent = `${member.phone}`;
     url.href = `${member.url}`;
@@ -41,3 +41,19 @@ const displayMembers = (members) => {
 };
 
 getMembers();
+
+// LIST/GRID Toggle
+
+const gridbutton = document.querySelector('#directory-grid');
+const listbutton = document.querySelector('#directory-list');
+// display is membersList
+
+gridbutton.addEventListener('click', () => {
+  membersList.classList.add('grid');
+  membersList.classList.remove('list');
+});
+
+listbutton.addEventListener('click', () => {
+  membersList.classList.add('list');
+  membersList.classList.remove('grid');
+});
