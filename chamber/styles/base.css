@@ -346,3 +346,85 @@ padding:.5rem;
 
 
 /* Directory Page */
+.directory-menu{
+  margin:1rem auto;
+  text-align: center;
+  margin-top: 2rem;
+ }
+
+ #directory-grid, #directory-list{
+  padding:.75rem;
+ }
+
+main{
+  margin:4rem;
+}
+
+#members-display section{
+  font-size: 1rem;
+  border: 1px solid #023373;
+}
+
+.dir-grid{
+  display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+.dir-grid section {
+  display: flex;
+  flex-direction: column;
+	text-align: center;
+  align-items: center;
+  height:300px;
+  margin:.75rem;
+  padding:2rem;
+  background-color: #bfd1e9;
+}
+
+.dir-grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.dir-grid section > * {
+	margin: 0.1rem;
+}
+
+
+.dir-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.dir-list section {
+  margin: 0;
+	padding: 0.25rem;
+  text-align: left;
+	width:100%;
+  height:auto;
+  background-color: none;
+
+ 
+}
+
+.dir-list section > * {
+	margin: 0 1rem;
+}
+
+.dir-list section img {
+	display: none;
+}
+
+.dir-list section h3 {
+  text-align: left;
+	font-size: 1rem;
+}
+
+.dir-list a{
+  font-size: 1rem;
+}
+
+.dir-list section:nth-child(even) {
+	background-color:#bfd1e9;
+}

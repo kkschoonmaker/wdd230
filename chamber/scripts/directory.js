@@ -49,11 +49,11 @@ const listbutton = document.querySelector('#directory-list');
 // display is membersList
 
 gridbutton.addEventListener('click', () => {
-  membersList.classList.add('grid');
-  membersList.classList.remove('list');
+  membersList.classList.add('dir-grid');
+  membersList.classList.remove('dir-list');
 });
 
 listbutton.addEventListener('click', () => {
-  membersList.classList.add('list');
-  membersList.classList.remove('grid');
+  membersList.classList.add('dir-list');
+  membersList.classList.remove('dir-grid');
 });

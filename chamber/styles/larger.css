@@ -163,4 +163,13 @@ transform:scale(1.5);
 }
 
 
+/* Directory Page */
+.dir-list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+  justify-items:start;
+ 
+ 
+}
+
 }
