@@ -141,6 +141,28 @@ h2 {
   grid-column: 2/3;
 }
 
+#information figure{
+ position:relative;
+}
+
+#information img{
+  position:absolute;
+  left:2rem;
+  top:.5rem;
+}
+
+#current-temp{
+  margin-left: 2.25rem;;
+}
+
+#information #current-temp, #information figcaption{
+  display:inline-flex;
+  margin-top:1rem;
+  /* justify-content: center;
+  align-items: center;
+  vertical-align: middle; */
+}
+
 .card {
   margin: 50px 10px 10px 10px;
   border: 1px solid #026873;
