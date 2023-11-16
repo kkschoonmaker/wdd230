@@ -22,7 +22,7 @@ async function apiFetch() {
 
 function displayResults(data) {
   currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   let desc = data.weather[0].description;
   //   Capitalize Description Words
   const words = desc.split(' ');
