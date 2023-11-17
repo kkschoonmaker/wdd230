@@ -52,7 +52,7 @@ h3,
 h4 {
    text-align: center;
   font-family: "Unna", serif;
-  line-height: 1.5em;
+  
  
 }
 
@@ -62,13 +62,14 @@ h1 {
   color: #f2cb05;
   padding: 0 10px 10px 10px;
   letter-spacing: 1.5px;
+  line-height: 1.5em;
 }
 
 h2 {
   margin:0;
   font-size: 1.5em;
   color: #023373;
-  padding: 5px;
+  padding: 2px;
   letter-spacing: 1.5px;
 
 }
@@ -79,7 +80,7 @@ h3 {
   color: #023373;
   letter-spacing: 1px;
   line-height: 1.5rem;
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 
@@ -181,6 +182,65 @@ background-color: #023373;
 .card h2, .card h3, .card p {
   text-align: left;
 }
+#weather, #weather p{
+  text-align: center;
+
+}
+#current-temp{
+  
+  font-size: 2rem;
+  
+}
+
+#weather figure{
+ 
+ 
+  justify-content: center;
+}
+
+#weather figcaption{
+  margin:-5px 0 auto;
+  
+  font-size: 1.25rem;
+}
+
+#wind{
+  display: none;
+}
+#wind-chill{
+  text-align: center;
+}
+
+#forecast{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  
+}
+
+#forecast-heading{
+  padding: .5rem;
+  grid-column:1/4;
+  place-items: center;
+
+}
+
+#d2{
+  padding:0 10px;
+  border-left: 1px dotted #aa0000;
+  border-right: 1px dotted #aa0000;
+}
+
+
+
+#day1, #day2, #day3{
+  font-size: 2rem;
+}
+
+#day1name, #day2name, #day3name{
+  font-size: .75rem;
+}
+
 
 hr {
   margin:0 0 .5em 0;
@@ -367,7 +427,7 @@ main{
 
 .dir-grid{
   display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
 }

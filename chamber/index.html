@@ -58,17 +58,34 @@
         <hr>
         <h3>Annual Chamber Gala</h3>
         <p>Join us for our Annual Commerce Gala, at the Antlers Hotel on December 9th 2023</p>
-
       </section>
+
        <!--Weather Card-->
       <section class='card' id='weather'>
         <h2>Weather</h2>
         <hr>
-        <p id='current-temperature'>Current temperature is <span id=temp>50</span>℉</p>
-        <p>Current wind speed is <span id=wind>15</span>mph</p>
-        <p> Wind Chill: <span id='wind-chill'></span></p>
-             </section>
-      </div>
+        <span id=current-temp></span>
+      
+        <figure>
+          <img id="weather-icon" src="" alt="">
+          <figcaption></figcaption>
+        </figure>
+        <br>
+        <p> 
+          <span id=wind></span>
+        </p>
+        <p> Temp with wind chill: 
+          <span id='wind-chill'></span>
+        </p>
+        <br>
+        <div id="forecast">
+          <h4 id="forecast-heading">3 Day Forecast</h4>
+          <p id="d1"><span id='day1name'></span><br><span id="day1"></span></p>
+          <p id="d2"><span id='day2name'></span><br><span id="day2"></span></p>
+          <p id="d3"><span id='day3name'></span><br><span id="day3"></span></p>
+        </div>
+       </section>
+     </div>
 
         <!--Business Spotlight-->
       <section class='spotlight'>
@@ -102,7 +119,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hambutton.js"></script>
     <script src='scripts/darkmode.js'></script>
-    <script src='scripts/windchill.js'></script>
+    <script src='scripts/weather.js'></script>
+    <script src='scripts/forecast.js'></script>
   </body>
  
   </html>

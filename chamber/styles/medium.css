@@ -15,5 +15,8 @@ body{
 height:330px;
 }
 
+#day1, #day2, #day3{
+  font-size: 1.5rem;
+}
 
 }

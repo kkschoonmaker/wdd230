@@ -1,26 +1,65 @@
-const apiKey = '8662d8ba5d4e6465a1a523cb2cc6a7ea';
-const city = 'ColoradoSprings';
+let currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-fetch(
-  `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
-)
-  .then((response) => response.json())
-  .then((data) => {
-    const temperature = data.main.temp;
-    const windSpeed = data.wind.speed;
-    const weatherDescription = data.weather[0].description;
+let wind = document.querySelector('#wind');
 
-    //Update HTML elements with weather data
-    document.getElementById(
-      'current-temperature'
-    ).textContent = `Current Temerature: ${temperature}℉;`;
-    document.getElementById(
-      'wind-speed'
-    ).textContent = `Wind Speed: ${windSpeed} m/s`;
-    document.getElementById(
-      'weather-description'
-    ).textContent = `Weather: ${weatherDescription}`;
-  });
+const url =
+  'https://api.openweathermap.org/data/2.5/weather?lat=38.83&lon=-104.83&units=imperial&appid=8662d8ba5d4e6465a1a523cb2cc6a7ea';
 
-.catch(error => {crossOriginIsolated.error('Error fetching weather data:', eroor)
-})
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      // console.log(data);
+      displayResults(data);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+function displayResults(data) {
+  let windSpeed = data.wind.speed;
+  let temperature = data.main.temp;
+
+  currentTemp.innerHTML = `${Math.round(temperature)}&deg;F`;
+  wind.innerHTML = `${Math.round(windSpeed)} mph`;
+
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  let desc = data.weather[0].description;
+  //   Capitalize Description Words
+  const words = desc.split(' ');
+  let desc2 = '';
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    desc2 = `${desc2} ${words[i]}`;
+  }
+
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', data.weather[0].main);
+  captionDesc.textContent = `${desc2}`;
+
+  if (temperature <= 50 && windSpeed > 3.0) {
+    let wc = windChill(temperature, windSpeed);
+    document.getElementById('wind-chill').innerHTML = `${wc}℉`;
+  } else {
+    document.getElementById('wind-chill').innerHTML = 'N/A';
+  }
+}
+
+//Wind Chill
+
+function windChill(temp, wind) {
+  return Math.round(
+    35.74 +
+      0.6215 * temp -
+      35.75 * Math.pow(wind, 0.16) +
+      0.4275 * temp * Math.pow(wind, 0.16)
+  );
+}
+
+apiFetch();
