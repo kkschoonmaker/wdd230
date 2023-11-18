@@ -28,9 +28,12 @@ body {
   max-width: 350px;
   
 }
-
+#meeting-banner{
+display:none;
+background-color: #bfd1e9;
+}
 .banner{
-  background-color: #bfd1e9;
+  
   text-align: center;
 
 }

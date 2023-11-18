@@ -7,10 +7,10 @@ closeButton.addEventListener('click', () => {
 });
 
 // Banner Display Days
-let today = new Date('November 23, 2023');
+let today = new Date();
 let weekDay = today.getDay();
 console.log(weekDay);
 
-if (weekDay == 0 || weekDay == 4 || weekDay == 5 || weekDay == 6) {
-  banner.style.display = 'none';
+if (weekDay == 1 || weekDay == 1 || weekDay == 3) {
+  banner.style.display = 'block';
 }
