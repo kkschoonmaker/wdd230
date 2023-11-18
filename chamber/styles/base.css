@@ -29,6 +29,29 @@ body {
   
 }
 
+.banner{
+  background-color: #bfd1e9;
+  text-align: center;
+
+}
+ .banner-content{
+  padding: 10px;
+  margin:0 auto;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  }
+
+  .bannertext{
+    flex-grow: 1;
+
+  }
+
+ .banner-close{
+  background: none;
+  border:none;
+  cursor: pointer;
+   }
 header {
   position: relative;
   background-color: rgba(2, 51, 115, 1);
