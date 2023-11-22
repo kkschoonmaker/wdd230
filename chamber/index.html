@@ -55,7 +55,7 @@
               <source srcset='images/wdd230-org-medium.webp' media='(max-width:1000px)'>
               <img src="images/wdd230-org-large.webp" alt="Woman sitting with two men at a                 table for a meeting"  width="1500" height="1002" class="hero" > -->
       </picture>
-      <button class="button"> Join the Chamber </button>   
+      <button class="button"> <a href = "join.html"> Join the Chamber</a> </button>   
     </div>
     <div class='main-grid'>
       <!--Current Events-->
@@ -95,22 +95,30 @@
 
         <!--Business Spotlight-->
       <section class='spotlight'>
+
         <h2 class='plain-text' >Business Spotlight</h2>
+        
         <div id='bus1' class='card'>
-          <h3>Modern Technology Solutions, Inc. (MTSI)</h3>
+          <h3 class="spotlightName"></h3>
           <hr>
-          <p>985 Space Center Dr, Ste 155 Colorado Springs, CO 80915</p>
+          <p class ="spotlightAddress"></p>
+          <p class ="spotlightPhone"></p>
         </div>
+        
         <div id='bus2' class='card'>
-          <h3>Summit Interquest</h3>
+          <h3 class="spotlightName">Summit Interquest</h3>
           <hr>
-          <p>5984 Interquest Dr Colorado Springs, CO<br>719.278.3861</p>
+          <p class ="spotlightAddress">5984 Interquest Dr Colorado Springs, CO</p>
+          <p class ="spotlightPhone">719.278.3861</p>
         </div>
+       
         <div id='bus3' class='card'>
-          <h3>The French Kitchen</h3>
+          <h3 class="spotlightName">The French Kitchen</h3>
           <hr>
-          <p>1234 Chestnut St. Colorado Springs, CO 80920 <br>719.528.6295</p>
+          <p class ="spotlightAddress">1234 Chestnut St. Colorado Springs, CO 80920 </p>
+          <p class ="spotlightPhone">719.528.6295</p>
         </div>
+      
       </section>
       
      
@@ -128,6 +136,7 @@
     <script src='scripts/weather.js'></script>
     <script src='scripts/forecast.js'></script>
     <script src="scripts/banner.js"></script>
+    <script src="randomspotlight.js"></script>
   </body>
  
   </html>

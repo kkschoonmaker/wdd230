@@ -185,14 +185,22 @@ background-color: #023373;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #aa0000;
-  color: white;
   font-weight: 700;
   font-size: 12px;
-  padding: 12px 22px;
+  padding: 10px 15px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 
+}
+.hero-image .button a{
+  /* padding:12px; */
+  text-decoration: none;
+  color:#f2f2f2;
+}
+
+.hero-image .button a:hover{
+  color:#aa0000;
 }
 
 .hero-image .button:hover{
@@ -304,7 +312,7 @@ main .discovery-grid{
   
 
 .sidebar{
-  margin:5rem auto;
+  margin:5rem 2rem;
   padding:1.5rem;
   border:#aa0000 ridge 5px;
   background-color: #dfdfdf;
@@ -323,6 +331,9 @@ main .discovery-grid{
 
 
 .gallery img{
+  max-width: 400px;
+  width:100%;
+  height:auto;
   margin-top:5rem;
   border-radius: 8px;
   box-shadow: 4px 4px 12px #023373;
@@ -341,6 +352,8 @@ figcaption{
 /* Join Page */
 fieldset{
   margin: 2rem auto;
+  max-width: 1200px;
+  width:90%;
 }
 
 form label input{
@@ -358,8 +371,9 @@ form label input{
 }
 
 form > label{
+  margin: 2rem auto;
   display:block;
-   width: 100%;
+   width: 90%;
   height: 10rem;
 }
 
@@ -408,12 +422,14 @@ display:block;
 }
 
 .benefits-card{
+  max-width: 1200px;
+  width:90%;
   display:block;
   margin: 2rem auto;
   text-align: left;
   background-color:#023373;
   color:white;
-  width:40rem;
+  
 }
 .benefits-card ul{
   list-style-type: none;
