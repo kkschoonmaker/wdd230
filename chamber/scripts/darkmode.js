@@ -1,6 +1,6 @@
 const modeButton = document.querySelector('#mode');
 const main = document.querySelector('body');
-const changeText = document.querySelector('.plain-text');
+const changeText = document.querySelectorAll('.plain-text');
 
 modeButton.addEventListener('click', () => {
   if (modeButton.textContent.includes('Light Mode')) {

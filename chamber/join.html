@@ -44,24 +44,24 @@
 <div class="form-grid">
      <form method="get" action="thankyou.html">
         <fieldset>
-            <legend><h3>Applicant Information</h3></legend>
-            <label class="top" id="fname">First Name*<input type="text" name="fname" required></label>
-            <label class="top" id="lname">Last Name*<input type="text" name="lname" required></label>
-            <label class="top" id="title">Title/Position in Organization<input type="text" name="title" pattern="[a-zA-Z/s-].{7,}" title="Must be at least 7 characters in length, and include only letters, spaces, or hyphens."></label>
-            <label class="top" id="email">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-             <label class="top" id="phone">Phone*<input type="tel" name="phone" required placeholder="1235551234"></label>
-             <label class="top" id="orgname">Name of business/organization<input type="text" name="orgname" required></label>
+            <legend><h3 class='plain-text'>Applicant Information</h3></legend>
+            <label class="plain-text, top" id="fname" >First Name*<input type="text" name="fname" required></label>
+            <label class="plain-text, top" id="lname">Last Name*<input type="text" name="lname" required></label>
+            <label class="plain-text, top" id="title">Title/Position in Organization<input type="text" name="title" pattern="[a-zA-Z/s-].{7,}" title="Must be at least 7 characters in length, and include only letters, spaces, or hyphens."></label>
+            <label class="plain-text, top" id="email">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="plain-text, top" id="phone">Phone*<input type="tel" name="phone" required placeholder="1235551234"></label>
+            <label class="plain-text, top" id="orgname">Name of business/organization<input type="text" name="orgname" required></label>
         </fieldset>
 
         <fieldset>
-            <legend><h3>Membership Options</h3></legend>
-            <label class="bottom"><input type="radio" name="membership" value="NP"> Nonprofit Membership</label>
-            <label class="bottom"><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
-            <label class="bottom"><input type="radio" name="membership" value="Silver"> Silver Membership</label>
-            <label class="bottom"><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+            <legend><h3 class="plain-text">Membership Options</h3></legend>
+            <label class="plain-text, bottom"><input type="radio" name="membership" value="NP"> Nonprofit Membership</label>
+            <label class="plain-text, bottom"><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+            <label class="plain-text, bottom"><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+            <label class="plain-text, bottom"><input type="radio" name="membership" value="Gold"> Gold Membership</label>
         </fieldset>
 
-        <label class="description"> Please give a description of your business/organization.
+        <label class="plain-text, description"> Please give a description of your business/organization.
           <textarea id="description-text" cols="20" name="description" wrap="hard"></textarea>
         </label>
 
@@ -136,7 +136,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hambutton.js"></script>
     <script src='scripts/darkmode.js'></script>
-    <script src='scripts/windchill.js'></script>
+    <!-- <script src='scripts/windchill.js'></script> -->
     <script src="scripts/timestamp.js"></script>
   </body>
  

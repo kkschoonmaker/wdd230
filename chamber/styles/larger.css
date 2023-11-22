@@ -79,6 +79,14 @@ width:100%;
   grid-column: 3/4;}
 
 
+footer{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  column-gap: 3rem;
+}
+
 /* Discover Page */
 main .discovery-grid{
   display:grid;

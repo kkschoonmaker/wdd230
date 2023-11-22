@@ -1,31 +1,75 @@
 const baseURL = 'https://kkschoonmaker.github.io/wdd230/chamber';
 const membersURL =
   'https://kkschoonmaker.github.io/wdd230/chamber/data/members.json';
-const spotlight = document.querySelector('.spotlight');
+const busOne = document.querySelector('#bus1');
+const busTwo = document.querySelector('#bus2');
+const busThree = document.querySelector('#bus3');
+
+let availableSpotComp = [];
 
 async function getSpotlight() {
   const response = await fetch(membersURL);
   const data = await response.json();
-  console.log(data);
-  //   displaySpotlight(data.members);
+
+  displaySpotlight(data.members);
 }
 
+getSpotlight();
+
 const displaySpotlight = (members) => {
-  members.forEach((member) => {
-    let card = document.querySelector('#bus1');
-    let busName = document.querySelector('.spotlightName');
-    let busAddress = document.querySelector('.spolightAddress');
-    let busPhone = document.querySelector('.spotlightPhone');
+  while (availableSpotComp.length < 3) {
+    const randomNum = Math.floor(Math.random() * members.length);
+    const randomItem = members[randomNum];
 
-    busName.textContent = `${member.name}`;
-    busAddress.textContent = `${member.address}`;
-    busPhone.textContent = `${member.phone}`;
+    if (randomItem != undefined) {
+      if (randomItem.memlevel == 'Gold' || randomItem.memlevel == 'Silver') {
+        availableSpotComp.push(randomItem);
+        delete members[randomNum];
+      }
+    }
+  }
 
-    card.appendChild(busName);
-    card.appendChild(busAddress);
-    card.appendChild(busPhone);
-    spotlight.appendChild(card);
-  });
+  let busNameOne = document.createElement('h3');
+  let lineOne = document.createElement('hr');
+  let busAddressOne = document.createElement('p');
+  let busPhoneOne = document.createElement('p');
+
+  busNameOne.textContent = `${availableSpotComp[0].name}`;
+  busAddressOne.textContent = `${availableSpotComp[0].address}`;
+  busPhoneOne.textContent = `${availableSpotComp[0].phone}`;
+
+  busOne.appendChild(busNameOne);
+  busOne.appendChild(lineOne);
+  busOne.appendChild(busAddressOne);
+  busOne.appendChild(busPhoneOne);
+
+  let busNameTwo = document.createElement('h3');
+  let lineTwo = document.createElement('hr');
+  let busAddressTwo = document.createElement('p');
+  let busPhoneTwo = document.createElement('p');
+
+  busNameTwo.textContent = `${availableSpotComp[1].name}`;
+  busAddressTwo.textContent = `${availableSpotComp[1].address}`;
+  busPhoneTwo.textContent = `${availableSpotComp[1].phone}`;
+
+  busTwo.appendChild(busNameTwo);
+  busTwo.appendChild(lineTwo);
+  busTwo.appendChild(busAddressTwo);
+  busTwo.appendChild(busPhoneTwo);
+
+  let busNameThree = document.createElement('h3');
+  let lineThree = document.createElement('hr');
+  let busAddressThree = document.createElement('p');
+  let busPhoneThree = document.createElement('p');
+
+  busNameThree.textContent = `${availableSpotComp[2].name}`;
+  busAddressThree.textContent = `${availableSpotComp[2].address}`;
+  busPhoneThree.textContent = `${availableSpotComp[2].phone}`;
+
+  busThree.appendChild(busNameThree);
+  busThree.appendChild(lineThree);
+  busThree.appendChild(busAddressThree);
+  busThree.appendChild(busPhoneThree);
 };
 
-getSpotlight();
+
