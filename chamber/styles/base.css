@@ -26,7 +26,7 @@ body {
   color: #023373;
   text-align: left;
   max-width: 599px;
-  transition: var(--background-color)0.5s ease;
+  transition: var(background-color)0.5s ease;
 }
 
 /* Dark Mode */
@@ -380,7 +380,7 @@ figcaption{
 
 /* Join Page */
 #join-title{
-  margin:3rempx;
+  margin:3rem;
 }
 
 fieldset{
@@ -407,14 +407,10 @@ form > label{
   margin: 2rem auto;
   display:block;
    width: 90%;
-  height: 10rem;
-}
+  }
 
-.description label{
-display:block;
-}
 
-.description #description-text{
+#description-text{
   display:block;
   width:100%;
   height:10rem;
