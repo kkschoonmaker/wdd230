@@ -26,8 +26,42 @@ body {
   color: #023373;
   text-align: left;
   max-width: 599px;
+  transition: var(--background-color)0.5s ease;
 }
 
+/* Dark Mode */
+.dark-mode {
+  background-color: #023373;
+  
+}
+
+.dm-container {
+ max-width: 100px;
+ margin:0px auto;
+ padding:0px;
+
+
+ }
+
+ #toggleBtn{
+  padding:4px;
+  background-color: #023373;
+  color: #bfd1e9;
+  border:none;
+  position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+ }
+
+ #toggleBtn:focus-visible {
+    outline: none;
+}
+
+.dark-mode .plain-text{
+  color:#f2f2f2;
+}
 
 #meeting-banner{
 display:none;
@@ -64,15 +98,9 @@ header {
   padding: 1rem;
 }
 
-/* Dark Mode */
-#mode{
-   color: #bfd1e9;
- position: absolute;
-	top: 1rem;
-	right: 1rem;
-	font-size: 1rem;
-	cursor: pointer;
-}
+
+
+
 
 h1,
 h2,
@@ -351,6 +379,10 @@ figcaption{
 }
 
 /* Join Page */
+#join-title{
+  margin:3rempx;
+}
+
 fieldset{
   margin: 2rem auto;
   max-width: 1200px;
@@ -528,9 +560,23 @@ padding:.5rem;
 }
 
 .dir-list a{
+  text-decoration: none;
   font-size: 1rem;
+  color:#aa0000;
 }
 
 .dir-list section:nth-child(even) {
 	background-color:#bfd1e9;
+}
+
+.dark-mode .dir-list section:nth-child(odd){
+  color:#f2f2f2;
+}
+
+.dark-mode .dir-list section:nth-child(odd) h3{
+  color:#f2f2f2;
+}
+
+.dark-mode #members-display section{
+  border:1px solid #f2f2f2;
 }

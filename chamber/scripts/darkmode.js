@@ -1,17 +1,17 @@
-const modeButton = document.querySelector('#mode');
-const main = document.querySelector('body');
-const changeText = document.querySelectorAll('.plain-text');
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleBtn = document.getElementById('toggleBtn');
+  const body = document.body;
 
-modeButton.addEventListener('click', () => {
-  if (modeButton.textContent.includes('Light Mode')) {
-    main.style.background = '#f2f2f2';
-    main.style.color = '#023373';
-    changeText.style.color = '#023373';
-    modeButton.textContent = 'Dark Mode';
-  } else {
-    main.style.background = '#023373';
-    main.style.color = '#023373';
-    changeText.style.color = '#f2f2f2';
-    modeButton.textContent = 'Light Mode';
-  }
+  // Toggle dark mode on button click
+  toggleBtn.addEventListener('click', function () {
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+      toggleBtn.textContent = 'Light Mode';
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
+      toggleBtn.textContent = 'Dark Mode';
+    }
+  });
 });
