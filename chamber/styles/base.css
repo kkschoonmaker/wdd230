@@ -221,14 +221,10 @@ background-color: #023373;
   border-radius: 5px;
 
 }
-.hero-image .button a{
+.hero-image a .button {
   /* padding:12px; */
   text-decoration: none;
   color:#f2f2f2;
-}
-
-.hero-image .button a:hover{
-  color:#aa0000;
 }
 
 .hero-image .button:hover{
