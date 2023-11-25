@@ -219,12 +219,9 @@ background-color: #023373;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-
-}
-.hero-image a .button {
-  /* padding:12px; */
   text-decoration: none;
   color:#f2f2f2;
+
 }
 
 .hero-image .button:hover{
