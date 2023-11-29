@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Motor Scooter Rentals on Cozumel</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="author" content="Kelly Schoonmaker">
+    <meta
+      name="description"
+      content="Rentals of motor scooters in Cozumel, Mexico">
+    <meta
+      property="og:title"
+      content="Kelly Schoonmaker - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kkschoonmaker.github.io/wdd230/scoots/images/scooters-on-beach.webp">
+    <meta property="og:url" content="https://kkschoonmaker.github.io/wdd230/scoots">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      
+      <div class="social"> 
+         <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+         <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+         <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+       </div>
+       <h1>Scoots Motor Scooter Rentals</h1>
+    </header>
+
+     <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="hero">
+        <a href = "reservations.html" class="button">
+        Reserve Your Scooter Now!
+        </a> 
+    </div>
+    <a id="menu" href="#"></a>
+   
+    <main>
+<div>
+    <h2>Rental Options</h2>
+    <p>We rent several vehicles from our single driver scooters up to a 5 passenger Jeep with air conditioning:</p>
+    <ul>
+        <li>Honda Metro Scooter</li>
+        <li> Honda Dio Scooter</li>
+        <li>Honda PCX150 Scooter</li>
+        <li>Honda Pioneer ATV</li>
+        <li> Jeep Wrangler - 2 door</li>
+        <li>Jeep Wrangler -4 door with a/c</li>
+        
+    </ul>
+    <a href = "rentals.html" class="button">
+        Choose Your Rental!
+        </a> 
+</div>
+      
+<div id="weather">
+ 
+    <h2>Weather</h2>
+   
+    <span id=current-temp></span>
+      
+    <figure>
+      <img id="weather-icon" src="." alt=".">
+      <figcaption></figcaption>
+    </figure>
+    <br>
+    
+    <p> Humidity 
+      <span id='humidity'></span>
+    </p>
+    <br>
+    <div id="forecast">
+      <h4 id="forecast-heading">Tomorrow's Forecast</h4>
+      <p id="d1"><span id='day1name'></span><br><span id="day1"></span></p>
+      
+    </div>
+      
+
+</div>
+
+    </main>
+
+    <footer>
+ <p id="year"></p>
+      <p>Scoots Rentals</p>
+        <p>719.123.4567</p>
+        <p id="lastModified"></p>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+     <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src='scripts/forecast.js'></script>
+  </body>
+  </html>
+  
