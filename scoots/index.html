@@ -28,10 +28,13 @@
          <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
          <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
        </div>
-       <h1>Scoots Motor Scooter Rentals</h1>
+       <h1>Scoots</h1>
+       <h2>Motor Scooter Rentals</h2>
     </header>
 
-     <nav>
+    <a id="menu" href="#"></a>
+
+    <nav>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
@@ -41,56 +44,55 @@
 
     </nav>
 
+    <div id="weather-alert" class="alert">
+      <button class="closebtn" type="button">&times;</button>
+      <span id="current-alert">TEST</span>
+    </div>
+
     <div class="hero">
         <a href = "reservations.html" class="button">
-        Reserve Your Scooter Now!
+        Reserve Your Scooter!
         </a> 
     </div>
-    <a id="menu" href="#"></a>
+    
    
     <main>
-<div>
-    <h2>Rental Options</h2>
-    <p>We rent several vehicles from our single driver scooters up to a 5 passenger Jeep with air conditioning:</p>
-    <ul>
-        <li>Honda Metro Scooter</li>
-        <li> Honda Dio Scooter</li>
-        <li>Honda PCX150 Scooter</li>
-        <li>Honda Pioneer ATV</li>
-        <li> Jeep Wrangler - 2 door</li>
-        <li>Jeep Wrangler -4 door with a/c</li>
-        
-    </ul>
-    <a href = "rentals.html" class="button">
-        Choose Your Rental!
-        </a> 
-</div>
+      <div class="home-grid">
+        <div class="rentals">
+         <h2>Rental Options</h2>
+         <p>We rent several vehicles from our single driver scooters up to a 5 passenger Jeep with air conditioning:</p>
+          <ul>
+          <li>Honda Metro Scooter</li>
+          <li> Honda Dio Scooter</li>
+          <li>Honda PCX150 Scooter</li>
+          <li>Honda Pioneer ATV</li>
+          <li> Jeep Wrangler - 2 door</li>
+          <li>Jeep Wrangler -4 door with a/c</li>
+          </ul>
+          <a href = "rentals.html" class="button">
+          Choose Your Rental!
+          </a> 
+       </div>
       
-<div id="weather">
- 
-    <h2>Weather</h2>
-   
-    <span id=current-temp></span>
-      
-    <figure>
-      <img id="weather-icon" src="." alt=".">
-      <figcaption></figcaption>
-    </figure>
-    <br>
-    
-    <p> Humidity 
-      <span id='humidity'></span>
-    </p>
-    <br>
-    <div id="forecast">
-      <h4 id="forecast-heading">Tomorrow's Forecast</h4>
-      <p id="d1"><span id='day1name'></span><br><span id="day1"></span></p>
-      
+        <div id="weather">
+         <h2>Cozumel Weather</h2>
+         <span id=current-temp></span>
+         <figure>
+          <img id="weather-icon" src="." alt=".">
+          <figcaption></figcaption>
+         </figure>
+         <br>
+         <p> Humidity 
+         <span id='humidity'></span>
+         </p>
+       
+          <div id="forecast">
+            <h4 id="forecast-heading">Tomorrow's Forecast</h4>
+            <p id="d1"><span id='day1name'></span><br><span id="day1"></span></p>
+          
+          </div>
+        </div>
     </div>
-      
-
-</div>
-
     </main>
 
     <footer>
@@ -100,6 +102,7 @@
         <p id="lastModified"></p>
         <a href="attributions.html">Attributions</a>
     </footer>
+    <script src="scripts/hambutton.js"></script>
      <script src="scripts/getdates.js"></script>
     <script src="scripts/weather.js"></script>
     <script src='scripts/forecast.js'></script>

@@ -1,0 +1,56 @@
+@media screen and (min-width: 900px) {
+.social {
+ position: absolute;
+ top:0;
+ right:1rem;
+ }
+
+ header {
+    max-width: 1200px;
+ }
+
+ #menu {
+    display: none;
+ }
+
+ .navigation li {
+  margin: 1rem;
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--main-text-color);
+  list-style: none;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.hero {
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+main{
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+.home-grid {
+    display:grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 10px;
+    justify-content: space-around;
+   }
+
+.rentals {
+    grid-column: 1 / 2;
+}
+
+#weather {
+    grid-column: 2 / 3;
+}
+}

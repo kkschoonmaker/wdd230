@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@200;500;600&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ephesis', cursive;; */
+
 :root{
   --background-color:#b3f4ff;
   --main-text-color:#294e61;
   --accent-color:#C8E6E0;
-  --neutral-color:#fdf9ee;
+  --neutral-color:#faf8f1;
 }
 
 body{
@@ -10,7 +15,12 @@ body{
   padding: 0;
   box-sizing: border-box;
   line-height: 1.5em;
-  background-color:  var(--background-color);
+  background-image: url("../images/stripes-01.png");
+  background-color: var(--neutral-color); 
+  background-repeat:repeat;
+  background-blend-mode:multiply;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--main-text-color);
 }
 
 
@@ -21,17 +31,32 @@ header {
  }
 
 h1{
+font-family: 'Ephesis', cursive;
 text-align: center;
-font-size: 3rem;
+font-size: 8rem;
+padding:.75rem;
+color: var(--main-text-color);
+margin-top:4rem;
+margin-bottom:0;
+}
+ 
+h2 {
+text-align: center;
+font-size: 2rem;
 padding:.75rem;
 color: var(--main-text-color);
 line-height: 3rem;
+text-decoration-line: underline;
 }
- 
+
+h4 {
+  font-size: 1.25rem;
+  text-decoration-line: underline;
+}
+
 .social {
- position: absolute;
- top:0;
- right:1rem;
+ margin:0 auto;
+ text-align: center;
  }
 
 .fa {
@@ -63,8 +88,83 @@ line-height: 3rem;
   color: white;
 }
  
+#menu {
+  display: block;
+  font-size: 1.25em;
+  text-decoration: none;
+  padding: 0.75rem 0.75rem .25rem 0.75rem;
+  background-color: var(--main-text-color);
+  color: var(--neutral-color);
+  text-align: left;
+}
+
+#menu::before {
+  content: "≡";
+  font-size: 3rem;
+}
+
+.navigation {
+display:block;
+list-style: none;
+margin: 0px;
+max-width:720px;
+background-color:var(--main-text-color);
+ } 
+
+
+.navigation li {
+  display: none;
+  padding:0;
+}
+
+.navigation a {
+  display:block;
+  color: var(--neutral-color);
+  background-color: var(--main-text-color);
+  padding:.25rem;
+  font-size: 20px;
+  text-decoration: none;
+  text-align:left;
+  transition:0.5s;
+}
+
+.navigation a:hover,
+.navigation a:active {
+  color: #026873;
+  background-color: #ffffff;
+}
+
+.show li {
+  display:block;
+}
+
+.alert {
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: var(--main-text-color);
+    text-align: center;
+    position: relative;
+}
+
+.closebtn {
+    margin:0;
+    color: var(--main-text-color);
+    background: none;
+    border:none;
+    font-weight: bold;
+    float: right;
+    font-size: 4rem;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: var(--neutral-color);
+}
 
 .hero{
+  position: relative;
  padding-top:10rem;
  padding-bottom:10rem;
  background-image: url("../images/background-image.webp");
@@ -75,45 +175,98 @@ line-height: 3rem;
  /* background-blend-mode:multiply; */
 }
 
-
-
-nav ul a {
-    text-decoration: none;
-}
-
-.navigation {
+.hero .button {
+  padding:10px 10px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 20%;
+  right: 20%;
+  max-width: 200px;
+  text-align: center;
+  bottom: 30px;
   background-color: var(--main-text-color);
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation li {
-  margin: 1.25rem;
-  display: block;
-}
-
-.navigation a {
   color: var(--neutral-color);
-  font-size: 20px;
   text-decoration: none;
+  /* border: 2px solid var(--accent-color); */
+  border-radius: 20px;
+  
 }
 
-.navigation a:hover,
-.navigation a:active {
-  color: #026873;
-  background-color: #ffffff;
+.hero .button:hover {
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
+  outline: 2px solid var(--main-text-color);
 }
 
-main{
-  margin:0 auto;
+
+
+.rentals, #weather{
+  margin:3rem auto;
+  padding:1rem;
   background-color: var(--neutral-color);
   max-width: 80%;
+  border: 5px solid var(--accent-color);
+  border-radius: 20px;
+  box-shadow: 0 2px 6px var(--main-text-color);
 }
 
+.rentals {
+  position:relative;
+  padding-bottom: 4rem;
+}
+
+.rentals .button {
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 20%;
+  right: 20%;
+  bottom:10px;
+  max-width: 200px;
+  padding:10px 15px;
+  margin:0 auto;
+  text-align: center;
+  background-color: var(--main-text-color);
+  color: var(--neutral-color);
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.rentals .button:hover {
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
+}
+
+
+
+#weather {
+  text-align: center;
+}
+
+#weather figure {
+  margin:0;
+}
+
+#weather p {
+  margin:0;
+}
+
+#current-temp {
+   font-size: 1.75rem;
+}
+
+#weather-icon {
+  margin:-.75rem;
+}
+
+#humidity {
+  margin-top:-2rem;
+}
+
+#day1 {
+  font-size: 1.5rem;
+}
 footer{
   padding:1rem;
   text-align: center;
