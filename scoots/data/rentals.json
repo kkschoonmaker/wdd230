@@ -9,7 +9,7 @@
           "FullDay": "$30"
         }
       ],
-      "Walk-inPrice": [
+      "WalkinPrice": [
         {
           "HalfDay": "$25",
           "FullDay": "$35"
@@ -26,7 +26,7 @@
           "FullDay": "$40"
         }
       ],
-      "Walk-inPrice": [
+      "WalkinPrice": [
         {
           "HalfDay": "$35",
           "FullDay": "$45"
@@ -43,7 +43,7 @@
           "FullDay": "$50"
         }
       ],
-      "Walk-inPrice": [
+      "WalkinPrice": [
         {
           "HalfDay": "$45",
           "FullDay": "$55"
@@ -60,7 +60,7 @@
           "FullDay": "$70"
         }
       ],
-      "Walk-inPrice": [
+      "WalkinPrice": [
         {
           "HalfDay": "$60",
           "FullDay": "$80"
@@ -77,7 +77,7 @@
           "FullDay": "$100"
         }
       ],
-      "Walk-inPrice": [
+      "WalkinPrice": [
         {
           "HalfDay": "$80",
           "FullDay": "$125"
@@ -94,7 +94,7 @@
           "FullDay": "$85"
         }
       ],
-      "Walk-inPrice": [
+      "WalkinPrice": [
         {
           "HalfDay": "$70",
           "FullDay": "$90"
