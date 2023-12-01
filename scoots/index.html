@@ -36,7 +36,7 @@
 
     <nav>
         <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">🛴Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -45,11 +45,13 @@
     </nav>
 
     <div id="weather-alert" class="alert">
-      <button class="closebtn" type="button">&times;</button>
-      <span id="current-alert">TEST</span>
+      <div class="alert-content">
+        <button class="closebtn" type="button">&times;</button>
+        <span id="current-alert"></span>
+      </div>
     </div>
 
-    <div class="hero">
+    <div id = "home-hero" class="hero">
         <a href = "reservations.html" class="button">
         Reserve Your Scooter!
         </a> 
@@ -98,7 +100,7 @@
     <footer>
  <p id="year"></p>
       <p>Scoots Rentals</p>
-        <p>719.123.4567</p>
+        <a href="contact.html">Contact Us</a>
         <p id="lastModified"></p>
         <a href="attributions.html">Attributions</a>
     </footer>
@@ -106,6 +108,7 @@
      <script src="scripts/getdates.js"></script>
     <script src="scripts/weather.js"></script>
     <script src='scripts/forecast.js'></script>
+    <script src='scripts/message.js'></script>
   </body>
   </html>
   

@@ -10,8 +10,12 @@ font-family: 'Ephesis', cursive;; */
   --neutral-color:#faf8f1;
 }
 
-body{
+* {
   margin:0 auto;
+}
+
+body {
+  
   padding: 0;
   box-sizing: border-box;
   line-height: 1.5em;
@@ -25,9 +29,7 @@ body{
 
 
 header {
- margin:0 auto;
  position: relative;
- 
  }
 
 h1{
@@ -55,7 +57,6 @@ h4 {
 }
 
 .social {
- margin:0 auto;
  text-align: center;
  }
 
@@ -138,33 +139,47 @@ background-color:var(--main-text-color);
   display:block;
 }
 
+
+#weather-alert {
+  background-color:var(--accent-color);
+  display:none;
+ 
+}
+
 .alert {
-    padding: 1rem;
-    background-color: var(--accent-color);
-    color: var(--main-text-color);
-    text-align: center;
-    position: relative;
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
+}
+
+.alert-content  {
+  padding: 1rem;
+  display: flex;
+  /* align-items: left; */
+}
+
+.current-alert {
+  text-align: left;
+  flex-grow:1;
 }
 
 .closebtn {
-    margin:0;
-    color: var(--main-text-color);
-    background: none;
-    border:none;
-    font-weight: bold;
-    float: right;
-    font-size: 4rem;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+  margin:0;
+  color: var(--main-text-color);
+  background: none;
+  border:none;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .closebtn:hover {
     color: var(--neutral-color);
 }
 
-.hero{
-  position: relative;
+#home-hero {
+ position: relative;
  padding-top:10rem;
  padding-bottom:10rem;
  background-image: url("../images/background-image.webp");
@@ -172,8 +187,19 @@ background-color:var(--main-text-color);
  background-repeat:no-repeat;
  background-size: cover;
  background-position: bottom 10% right;
- /* background-blend-mode:multiply; */
 }
+
+#rentals-hero {
+ position: relative;
+ padding-top:10rem;
+ padding-bottom:10rem;
+ background-image: url("../images/man-on-scooter.webp");
+ background-color: #63767a; 
+ background-repeat:no-repeat;
+ background-size: cover;
+ background-position: bottom 50% right;
+}
+
 
 .hero .button {
   padding:10px 10px;

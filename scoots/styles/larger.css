@@ -29,6 +29,10 @@
   max-width: 1200px;
 }
 
+#weather-alert {
+    max-width: 1200px;
+}
+
 .hero {
     margin:0 auto;
     max-width: 1200px;
@@ -53,4 +57,17 @@ main{
 #weather {
     grid-column: 2 / 3;
 }
+
+footer {
+    display:flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    max-width: 1200px;
+}
+footer p, footer a {
+    padding:1rem;
+}
+
+
+
 }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Motor Scooter Rentals on Cozumel</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="author" content="Kelly Schoonmaker">
+    <meta
+      name="description"
+      content="Rentals of motor scooters in Cozumel, Mexico">
+    <meta
+      property="og:title"
+      content="Kelly Schoonmaker - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kkschoonmaker.github.io/wdd230/scoots/images/scooters-on-beach.webp">
+    <meta property="og:url" content="https://kkschoonmaker.github.io/wdd230/scoots">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      
+      <div class="social"> 
+         <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+         <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+         <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+       </div>
+       <h1>Scoots</h1>
+       <h2>Motor Scooter Rentals</h2>
+    </header>
+
+    <a id="menu" href="#"></a>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">🛴Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <div id="rentals-hero" class="hero">
+        <!-- <a href = "reservations.html" class="button">
+        Reserve Your Scooter!
+        </a>  -->
+    </div>
+    
+   
+    <main>
+        
+     <div class="rentals-grid">
+
+        <div id="table-container">
+            <table id="rentalTable">
+              <thead>
+                <tr>
+                    <th>Reservation</th>
+                    <th>Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Half Day (3hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+        </div>
+
+     </div>
+    </main>
+
+    <footer>
+ <p id="year"></p>
+      <p>Scoots Rentals</p>
+        <a href="contact.html">Contact Us</a>
+        <p id="lastModified"></p>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+    <script src="scripts/hambutton.js"></script>
+     <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src='scripts/forecast.js'></script>
+    <script src='scripts/message.js'></script>
+    <script src="scripts/rentaltable.js"></script>
+  </body>
+  </html>
+  
