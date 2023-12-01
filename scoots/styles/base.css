@@ -189,16 +189,7 @@ background-color:var(--main-text-color);
  background-position: bottom 10% right;
 }
 
-#rentals-hero {
- position: relative;
- padding-top:10rem;
- padding-bottom:10rem;
- background-image: url("../images/man-on-scooter.webp");
- background-color: #63767a; 
- background-repeat:no-repeat;
- background-size: cover;
- background-position: bottom 50% right;
-}
+
 
 
 .hero .button {
@@ -303,4 +294,34 @@ footer{
 footer a {
   color:var(--neutral-color)
  
+}
+
+/* RENTALS PAGE */
+
+#rentals-hero {
+ position: relative;
+ padding-top:10rem;
+ padding-bottom:10rem;
+ background-image: url("../images/man-on-scooter.webp");
+ background-color: #63767a; 
+ background-repeat:no-repeat;
+ background-size: cover;
+ background-position: bottom 50% right;
+}
+
+table {
+  border-collapse:collapse;
+  margin:3rem auto;
+  padding:1rem;
+  background-color: var(--neutral-color);
+  max-width: 80%;
+  border: 5px solid var(--accent-color);
+  border-radius: 20px;
+  box-shadow: 0 2px 6px var(--main-text-color);
+}
+
+th, td {
+  border:1px solid white;
+  text-align: left;
+  padding:8px;
 }
