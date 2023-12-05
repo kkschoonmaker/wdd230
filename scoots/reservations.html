@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Motor Scooter Rentals on Cozumel</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="author" content="Kelly Schoonmaker">
+    <meta
+      name="description"
+      content="Rentals of motor scooters in Cozumel, Mexico">
+    <meta
+      property="og:title"
+      content="Kelly Schoonmaker - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kkschoonmaker.github.io/wdd230/scoots/images/scooters-on-beach.webp">
+    <meta property="og:url" content="https://kkschoonmaker.github.io/wdd230/scoots">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      
+      <div class="social"> 
+         <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+         <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+         <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+       </div>
+       <h1>Scoots</h1>
+       <h2>Motor Scooter Rentals</h2>
+    </header>
+
+    <a id="menu" href="#"></a>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">🛴Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <div id="reservations-hero" class="hero"></div>
+
+    <div class="rentals-info">
+          <h2> Rental Services and Agreements</h2>
+          <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years old are allowed to ride the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.  </li>
+          </ul>
+        </div>
+
+    <div class="res-form">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend><h3>Personal Information</h3></legend>
+                <label id="fname" >First Name*<input type="text" name="fname" required></label>
+                <label  id="lname">Last Name*<input type="text" name="lname" required></label>
+                <label id="email">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label id="phone">Phone*<input type="tel" name="phone" required placeholder="1235551234"></label>
+                <label id="home-state">Home State/Country<input type="text" name="home-state" required></label>
+                <label id="cruise-line">Cruise Line (if applicable)
+                    <select name="cruise-line">
+                        <option value="" >Please Select &#9662;</option>
+                        <option value="carnival">Carnival</option>
+                        <option value="celebrity">Celebrity Cruises</option>
+                        <option value="holland-america">Holland America Line</option>
+                        <option value="msc"> MSC Cruises</option>
+                        <option value="norwegian">Norwegian Cruise Line</option>
+                        <option value="oceania"> Oceania Cruises</option>
+                        <option value="princess"> Princess Cruises</option>
+                        <option value="regent-seven-seas"> Regent Seven Seas Cruises</option>
+                        <option value="royal-caribbean">Royal Caribbean</option>
+                        <option value="silver-sea"> Silversea Cruises</option>
+                        <option value="viking"> Viking Expeditions</option>
+                        <option value="other"> Other</option>                  
+                    </select>
+                </label>
+            </fieldset>
+              
+            <fieldset>
+
+                <legend><h3>Reservation Information</h3></legend>
+                <label id="date">Rental Date*<input type="date" name="date" required> </label>
+                <label id="period">Rental Period* <br><input type="radio" name="period" value="Half Day (3 hrs)">Half Day (3 hrs)</label>
+                <br>
+                <label id="period"> <input type="radio" name="period" value="fullday">Full Day</label><br>
+                <label id="rental-type">Rental Type
+                    <select name="rental-type">
+                        <option value="" >Please Select &#9662;</option>
+                        <option value="honda-metro">Honda Metro Scooter</option>
+                        <option value="honda-dio">Honda Dio Scooter</option>
+                        <option value="honda-pcx150">Honda PCX150 Scooter</option>
+                        <option value="honda-pioneer">Honda Pioneer ATV</option>
+                        <option value="jeep-wrangler-4">Jeep Wrangler - 4 door with a/c</option>
+                        <option value="jeep=wrangler"> Jeep Wrangler - 2 door</option>
+                    </select>
+                </label>
+                <label>How Many Rentals?<input type="number" name="num-rentals"> </label>
+
+            </fieldset>
+
+            <label id="comments-label" for="comments-text "></label>
+          <p>Please give a description of any special accomidations/comments such as the need and location of a drop-off request.</p>
+          <textarea id="comments-text" cols="20" name="description" wrap="hard"></textarea>
+        
+        </form>
+    </div>
+    
+   
+    <main>
+
+    
+    </main>
+
+    <footer>
+ <p id="year"></p>
+      <p>Scoots Rentals</p>
+        <a href="contact.html">Contact Us</a>
+        <p id="lastModified"></p>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+    <script src="scripts/hambutton.js"></script>
+     <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src='scripts/forecast.js'></script>
+    <script src='scripts/message.js'></script>
+    <script src="scripts/rentaltable.js"></script>
+  </body>
+  </html>
+  

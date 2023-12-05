@@ -309,8 +309,7 @@ footer a {
  background-position: bottom 50% right;
 }
 
-table {
-  border-collapse:collapse;
+.rentals-info, #rentalTable, .res-form {
   margin:3rem auto;
   padding:1rem;
   background-color: var(--neutral-color);
@@ -318,10 +317,98 @@ table {
   border: 5px solid var(--accent-color);
   border-radius: 20px;
   box-shadow: 0 2px 6px var(--main-text-color);
+  max-width:1200px;
 }
 
-th, td {
-  border:1px solid white;
+
+#rentalTable {
+   border-collapse: collapse; 
+   border:none;
+   max-width:70%;
+  }
+
+thead th {
+  padding:.5rem;
+  background-color: var(--accent-color);
+  color:var(--main-text-color);
+  border-right: .25px solid var(--main-text-color);
+  border-bottom: .25px solid var(--main-text-color)
+}
+
+thead .table-title th{
+  background-color: var(--neutral-color);
+  color:var(--main-text-color);
+  text-align:center;
+  text-align: center;
+  font-size: 2rem;
+  padding:1rem;
+  line-height: 3rem;
+  text-decoration-line: underline;
+}
+
+td {
   text-align: left;
   padding:8px;
+  border-right: .25px solid var(--main-text-color);
+  
+}
+
+
+tbody tr:nth-child(even){
+  background-color: var(--accent-color);
+}
+
+/* Reservations Page */
+
+#reservations-hero {
+ position: relative;
+ padding-top:10rem;
+ padding-bottom:10rem;
+ background-image: url("../images/scooter-rentals.webp");
+ background-color: #63767a; 
+ background-repeat:no-repeat;
+ background-size: cover;
+ background-position: bottom 20% right;
+}
+
+#period input{
+  display: inline;
+}
+
+fieldset {
+  padding:1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width:90%;
+}
+
+form label input, form label select  {
+  margin:1rem;
+   display:block;
+}
+
+
+#comments-label {
+  margin:2rem;
+  padding:2rem;
+  max-width: 90%;
+}
+
+#comments-text {
+  margin:0 auto;
+  display:block;
+  width:90%;
+  height:10rem;
+  margin-top:.5rem;
+}
+
+/* Thank you Page */
+.thankyouform {
+  margin:3rem auto;
+  padding:1rem;
+  background-color: var(--neutral-color);
+  max-width: 80%;
+  border: 5px solid var(--accent-color);
+  border-radius: 20px;
+  box-shadow: 0 2px 6px var(--main-text-color);
 }
