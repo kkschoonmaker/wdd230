@@ -309,7 +309,7 @@ footer a {
  background-position: bottom 50% right;
 }
 
-.rentals-info, #rentalTable, .res-form {
+.rentals-info, #rentalTable, .res-form, .contact-info, .contact-form, .rental-info {
   margin:3rem auto;
   padding:1rem;
   background-color: var(--neutral-color);
@@ -317,7 +317,7 @@ footer a {
   border: 5px solid var(--accent-color);
   border-radius: 20px;
   box-shadow: 0 2px 6px var(--main-text-color);
-  max-width:1200px;
+  
 }
 
 
@@ -340,10 +340,10 @@ thead .table-title th{
   color:var(--main-text-color);
   text-align:center;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding:1rem;
-  line-height: 3rem;
-  text-decoration-line: underline;
+  line-height: 1.5rem;
+  
 }
 
 td {
@@ -376,26 +376,23 @@ tbody tr:nth-child(even){
 }
 
 fieldset {
-  padding:1rem;
+  padding:1.5rem 1rem;
   margin: 2rem auto;
   max-width: 1200px;
   width:90%;
 }
 
 form label input, form label select  {
-  margin:1rem;
+  margin:0 2rem 1rem 0;
    display:block;
 }
 
-
-#comments-label {
-  margin:2rem;
-  padding:2rem;
-  max-width: 90%;
+form p {
+  margin: 0 2rem;
 }
 
 #comments-text {
-  margin:0 auto;
+  margin:1rem auto;
   display:block;
   width:90%;
   height:10rem;
@@ -411,4 +408,23 @@ form label input, form label select  {
   border: 5px solid var(--accent-color);
   border-radius: 20px;
   box-shadow: 0 2px 6px var(--main-text-color);
+}
+
+/* Contact Page */
+#map {
+  margin:0 auto;
+  width:80%;
+  height:auto;
+  max-width: 1200px;
+}
+
+#contact-text {
+  display:block;
+  width:90%;
+  height:10rem;
+  margin-top:.5rem;
+}
+
+.contact-form p{
+  margin:0;
 }
