@@ -46,7 +46,7 @@
 
     <div id = "home-hero" class="hero">
         <a href = "reservations.html" class="button">
-        Reserve Your Scooter!
+        Reserve Your Vehicle!
         </a> 
     </div>
     
@@ -70,14 +70,17 @@
       </div>
       
       <div class="contact-form">
-        <form>
+        <form  method="get" action="contacted.html">
             <label>First Name*: <input type="text" id="fname" name="firstname" required></label>
             <label>Last Name*: <input type="text" id="lname" name="lastname" required></label>
             <label>Email Address*: <input type="email" name="email" id="email" placeholder="someone@gmail.com"> </label>
             <label id="contact-label" for="contact-text "></label>
             <p>Let us know what questions you have.</p>
             <textarea id="contact-text" cols="20" name="contact-form" wrap="hard"></textarea>
-        </form>
+        
+            <button class="submitBtn" type="submit">Send Message</button>   
+
+          </form>
       </div>
     </main>
 

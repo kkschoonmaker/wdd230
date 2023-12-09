@@ -21,12 +21,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <div id="weather-alert" class="alert">
+      <div class="alert-content">
+        <button class="closebtn" type="button">&times;</button>
+        <span id="current-alert"></span>
+      </div>
+    </div>
+
+    <div id="temp-alert" class="alert">
+      <div class="temp-alert-content">
+        <button class="temp-close-btn" type="button">&times;</button>
+        <span id="high-temp"></span>
+      </div>
+    </div>
     <header>
       
       <div class="social"> 
          <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
          <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
          <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+      
        </div>
        <h1>Scoots</h1>
        <h2>Motor Scooter Rentals</h2>
@@ -44,16 +58,11 @@
 
     </nav>
 
-    <div id="weather-alert" class="alert">
-      <div class="alert-content">
-        <button class="closebtn" type="button">&times;</button>
-        <span id="current-alert"></span>
-      </div>
-    </div>
+    
 
     <div id = "home-hero" class="hero">
         <a href = "reservations.html" class="button">
-        Reserve Your Scooter!
+        Reserve Your Vehicle!
         </a> 
     </div>
     
@@ -109,6 +118,7 @@
     <script src="scripts/weather.js"></script>
     <script src='scripts/forecast.js'></script>
     <script src='scripts/message.js'></script>
+    <script src="scripts/tempmessage.js"></script>
   </body>
   </html>
   

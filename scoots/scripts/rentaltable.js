@@ -15,7 +15,7 @@ const displayRentals = (rentals) => {
     const tableBody = document.querySelector('#rentalTable tbody');
 
     const row = document.createElement('tr');
-    row.innerHTML = `<td>${rental.RentalType}</td><td>${rental.MaxPersons}</td><td>${rental.ReservationPrice[0].FullDay}</td><td>${rental.ReservationPrice[0].HalfDay}</td><td>${rental.WalkinPrice[0].FullDay}</td><td>${rental.WalkinPrice[0].HalfDay}</td>`;
+    row.innerHTML = `<td>${rental.RentalType}</td><td>${rental.MaxPersons}</td><td>${rental.ReservationPrice[0].HalfDay}</td><td>${rental.ReservationPrice[0].FullDay}</td><td>${rental.WalkinPrice[0].HalfDay}</td><td>${rental.WalkinPrice[0].FullDay}</td>`;
     tableBody.appendChild(row);
   });
 };

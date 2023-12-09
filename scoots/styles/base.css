@@ -88,6 +88,11 @@ h4 {
   background: #bb0000;
   color: white;
 }
+
+.fa-instagarm {
+  background: #bb0000;
+  color: white;
+}
  
 #menu {
   display: block;
@@ -151,18 +156,23 @@ background-color:var(--main-text-color);
   color: var(--main-text-color);
 }
 
-.alert-content  {
+.alert-content, .temp-alert-content  {
   padding: 1rem;
   display: flex;
   /* align-items: left; */
 }
 
-.current-alert {
+.current-alert, #high-temp {
   text-align: left;
   flex-grow:1;
 }
 
-.closebtn {
+#temp-alert {
+  display:block;
+  background-color:var(--accent-color);
+}
+
+.closebtn, .temp-close-btn {
   margin:0;
   color: var(--main-text-color);
   background: none;
@@ -174,7 +184,7 @@ background-color:var(--main-text-color);
   transition: 0.3s;
 }
 
-.closebtn:hover {
+.closebtn:hover, .temp-close-btn:hover {
     color: var(--neutral-color);
 }
 
@@ -292,7 +302,8 @@ footer{
 }
 
 footer a {
-  color:var(--neutral-color)
+  color:var(--neutral-color);
+  cursor: pointer;
  
 }
 
@@ -309,6 +320,8 @@ footer a {
  background-position: bottom 50% right;
 }
 
+
+
 .rentals-info, #rentalTable, .res-form, .contact-info, .contact-form, .rental-info {
   margin:3rem auto;
   padding:1rem;
@@ -318,6 +331,32 @@ footer a {
   border-radius: 20px;
   box-shadow: 0 2px 6px var(--main-text-color);
   
+}
+
+.flex-container {
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+.flex-container figure {
+  margin:1rem auto;
+  background-color: var(--neutral-color);
+  border: 5px solid var(--accent-color);
+  border-radius: 20px;
+  box-shadow: 0 2px 6px var(--main-text-color);
+  
+}
+
+.flex-container figure img {
+  border-radius: 20px;
+}
+
+.flex-container figure figcaption {
+  text-align: center;
+  background-color: var(--neutral-color);
+  border-radius: 20px;
 }
 
 
@@ -371,15 +410,30 @@ tbody tr:nth-child(even){
  background-position: bottom 20% right;
 }
 
+.res-form {
+  display:relative;
+}
+
 #period input{
   display: inline;
 }
 
 fieldset {
-  padding:1.5rem 1rem;
+  padding:1.5rem .5rem;
   margin: 2rem auto;
   max-width: 1200px;
   width:90%;
+  min-width: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ }
+
+fieldset legend {
+  min-width: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 form label input, form label select  {
@@ -393,16 +447,39 @@ form p {
 
 #comments-text {
   margin:1rem auto;
+  margin-bottom:2rem;
   display:block;
   width:90%;
   height:10rem;
   margin-top:.5rem;
 }
 
+.submitBtn {
+  display:block;
+  position:relative;
+  margin:1rem auto;
+  padding: 10px 10px;
+  max-width: 200px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-text-color);
+  color: var(--neutral-color);
+  text-decoration: none;
+  border-radius: 20px;    
+}
+
+.submitBtn:hover {
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
+  outline: 2px solid var(--main-text-color);
+}
+
+
 /* Thank you Page */
 .thankyouform {
   margin:3rem auto;
-  padding:1rem;
+  padding:2rem;
   background-color: var(--neutral-color);
   max-width: 80%;
   border: 5px solid var(--accent-color);
