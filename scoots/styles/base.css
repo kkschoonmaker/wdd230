@@ -493,10 +493,11 @@ form label input, form label select  {
 }
 
 /* Contact Page */
-#map {
+#map iframe {
+  display:block;
   margin:0 auto;
   width:80%;
-  height:auto;
+  height:35rem;
   max-width: 1200px;
 }
 
