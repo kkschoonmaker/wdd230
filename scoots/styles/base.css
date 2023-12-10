@@ -418,11 +418,7 @@ tbody tr:nth-child(even){
  background-position: bottom 20% right;
 }
 
-.res-form {
-  display:relative;
-}
-
-#period input{
+#period input, #period-fd input{
   display: inline;
 }
 
@@ -449,11 +445,12 @@ form label input, form label select  {
    display:block;
 }
 
-form p {
+#commentslabel {
+  display:block;
   margin: 0 2rem;
 }
 
-#comments-text {
+#commentstext {
   margin:1rem auto;
   margin-bottom:2rem;
   display:block;

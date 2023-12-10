@@ -98,7 +98,7 @@
                 <label id="date">Rental Date*<input type="date" name="date" required> </label>
                 <label id="period">Rental Period* <br><input type="radio" name="period" value="Half Day (3 hrs)">Half Day (3 hrs)</label>
                 <br>
-                <label id="period"> <input type="radio" name="period" value="fullday">Full Day</label><br>
+                <label id="period-fd"> <input type="radio" name="period" value="fullday">Full Day</label><br>
                 <label id="rental-type">Rental Type
                     <select name="rental-type">
                         <option value="" >Please Select &#9662;</option>
@@ -114,9 +114,10 @@
 
             </fieldset>
 
-            <label id="comments-label" for="comments-text "></label>
-            <p>Please give a description of any special accomodations or comments such as the need and location of a drop-off request.</p>
-            <textarea id="comments-text" cols="20" name="description" wrap="hard"></textarea>
+            <label id="commentslabel" for="commentstext ">Please give a description of any special accomodations or comments such as the need and location of a drop-off request.
+              <textarea id="commentstext" cols="20" name="description" wrap="hard"></textarea>
+            </label>
+             
         
             <button class="submitBtn" type="submit">Reserve Your Vehicle</button>
             
