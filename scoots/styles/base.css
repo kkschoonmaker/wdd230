@@ -242,6 +242,9 @@ background-color:var(--main-text-color);
   position:relative;
   padding-bottom: 4rem;
 }
+.rentals ul {
+  margin-bottom: 1rem;
+}
 
 .rentals .button {
   position:absolute;
@@ -333,6 +336,7 @@ footer a {
   
 }
 
+
 .flex-container {
   display:flex;
   flex-direction:row;
@@ -361,10 +365,13 @@ footer a {
 
 
 #rentalTable {
-   border-collapse: collapse; 
-   border:none;
-   max-width:70%;
+  border-collapse: collapse; 
+  border:none;
+  max-width:90%;
+  table-layout: fixed;
+  font-size: .75rem;
   }
+
 
 thead th {
   padding:.5rem;
